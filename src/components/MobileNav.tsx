@@ -4,18 +4,12 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
+import { Nav } from "@/constants/detailes";
+import { cn } from "@/lib/utils";
 
 export default function MobileNav() {
   const [isSheetOpen, setIsSheetOpen] = useState<boolean>(false);
-
-  const Nav: TNav[] = [
-    { id: 1, name: "About", href: "#" },
-    { id: 1, name: "Services", href: "#" },
-    { id: 1, name: "Products", href: "#" },
-    { id: 1, name: "Contact", href: "#" },
-    { id: 1, name: "FAQ", href: "#" },
-  ];
 
   return (
     <div className="">
@@ -36,6 +30,7 @@ export default function MobileNav() {
                   onClick={() => setIsSheetOpen(false)}
                   key={item.id}
                   href={item.href}
+                  className={cn(buttonVariants({ variant: "ghost" }), "w-full")}
                 >
                   {item.name}
                 </Link>

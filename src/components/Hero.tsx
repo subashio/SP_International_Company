@@ -18,20 +18,20 @@ export default function Hero() {
           <div className="space-y-4 sm:flex sm:space-x-4 sm:space-y-0">
             <Link
               href="#"
-              className="inline-flex w-full items-center justify-center rounded-lg border border-gray-200 bg-[#23A0DA] px-5 py-3 text-center text-sm font-medium text-gray-900 hover:bg-[#91d4f3] focus:ring-4 focus:ring-gray-100 sm:w-auto"
+              className="inline-flex w-full items-center justify-center rounded-lg border border-gray-200 bg-[#23A0DA] px-5 py-3 text-center text-sm font-medium text-gray-900 hover:bg-[#9bd1eb] focus:ring-4 focus:ring-gray-100 sm:w-auto"
             >
               Discover more
             </Link>
             <Link
               href="#"
-              className="mb-2 mr-2 inline-flex w-full items-center justify-center rounded-lg border border-gray-200 bg-white px-5 py-3 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 sm:w-auto dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+              className="mb-2 mr-2 inline-flex w-full items-center justify-center rounded-lg border border-gray-200 bg-white px-5 py-3 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700 sm:w-auto"
             >
               FAQ
             </Link>
           </div>
         </div>
         <div className="mt-10 lg:col-span-5 lg:mt-0 lg:flex">
-          <img src="/hero.png" alt="Logo" className="" />
+          <img src="/pictures/hero.png" alt="Logo" className="" />
         </div>
       </MaxWidthWrapper>
       <Collaburation />
