@@ -25,13 +25,17 @@ export default function ProductCarousel() {
       }}
       className="w-full max-w-sm md:max-w-4xl lg:max-w-7xl"
     >
-      <CarouselContent>
+      <CarouselContent className="!z-10">
         {ProductCard.map((item) => (
-          <CarouselItem key={item.id} className="md:basis-1/2 xl:basis-1/4">
+          <CarouselItem
+            key={item.id}
+            className="!z-10 md:basis-1/2 xl:basis-1/4"
+          >
             <Link href="#">
-              <Card className="hover:border-[#23A0DA]">
+              <Card className="transition-all duration-300 hover:border-[#00AEFF]">
                 <CardContent className="flex flex-col gap-2">
                   <img src={item.img} alt="Product Image" />
+
                   <h1 className="my-2 text-xl font-semibold uppercase">
                     {item.name}
                   </h1>

@@ -39,7 +39,7 @@ export default function ScrollProgressBar({
   if (type === "bar") {
     return (
       <div
-        className="pointer-events-none fixed end-0 start-0 top-0"
+        className="pointer-events-none fixed end-0 start-0 top-0 !z-50"
         style={{ height: `${strokeSize + 2}px` }}
       >
         <span
@@ -56,7 +56,7 @@ export default function ScrollProgressBar({
   return (
     <Link
       href="#"
-      className={cn("fixed flex items-center justify-center", {
+      className={cn("fixed z-50 flex items-center justify-center", {
         "end-0 top-0": position === "top-right",
         "bottom-0 end-0": position === "bottom-right",
         "start-0 top-0": position === "top-left",
@@ -87,7 +87,7 @@ export default function ScrollProgressBar({
           </svg>
           {showPercentage && (
             <span className="absolute ml-2">
-              {<ArrowUpFromDot color="#23A0DA" className="mr-2 w-20" />}
+              {<ArrowUpFromDot color="#00AEFF" className="mr-2 w-20" />}
             </span>
           )}
         </>

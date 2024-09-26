@@ -40,4 +40,10 @@ declare global {
     description: string;
     img: string | undefined;
   };
+  type TAboutCards = {
+    id: number;
+    name: String;
+    description: string;
+    img: string | undefined;
+  };
 }

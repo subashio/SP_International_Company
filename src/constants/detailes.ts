@@ -240,3 +240,34 @@ export const ProductCard: TProductCard[] = [
     img: "/pictures/valves.png",
   },
 ];
+
+export const AboutCards: TAboutCards[] = [
+  {
+    id: 1,
+    name: "Product Range",
+    description:
+      "Delivering reliable and high-performance products to drive industrial operations, engineered for maximum efficiency.",
+    img: "/icons/icon1.png",
+  },
+  {
+    id: 2,
+    name: "Industry Solutionse",
+    description:
+      "Offering specialized solutions to address the unique needs of industries such as Pharma, Oil & Gas, Water, and Power",
+    img: "/icons/icon2.png",
+  },
+  {
+    id: 3,
+    name: "Sustainability",
+    description:
+      "Harnessing solar energy to create eco-friendly, cost-effective pumping systems for agriculture, residential, and industrial use",
+    img: "/icons/icon3.png",
+  },
+  {
+    id: 4,
+    name: "Specialized Equipment",
+    description:
+      "Providing advanced hydraulic systems, durable pipes, and quality cables designed to withstand rigorous industrial demands.",
+    img: "/icons/icon4.png",
+  },
+];

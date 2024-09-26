@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section className="relative">
-      <ScrollProgressBar type="circle" color="#23A0DA" showPercentage={true} />
+      <ScrollProgressBar type="circle" color="#00AEFF" showPercentage={true} />
       <Hero />
       <ServicesAndProducts />
       <About />
