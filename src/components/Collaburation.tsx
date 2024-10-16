@@ -1,23 +1,11 @@
-import React from "react";
+"use client";
+import { Logos } from "@/constants/detailes";
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export default function Collaburation() {
   return (
-    <div className="mt-20 flex h-24 w-full items-center justify-center gap-8 bg-white">
-      <img
-        src="/logos/modylogo.png"
-        alt="image"
-        className="my-4 h-8 cursor-pointer grayscale sm:h-12"
-      />
-      <img
-        src="/logos/cornell.png"
-        alt="image"
-        className="my-4 h-8 cursor-pointer grayscale sm:h-12"
-      />
-      <img
-        src="/logos/globlepump.png"
-        alt="image"
-        className="my-4 h-8 cursor-pointer grayscale sm:h-12"
-      />
+    <div className="dark:bg-grid-white/[0.05] relative flex h-24 flex-col items-center justify-center overflow-hidden rounded-md bg-white antialiased dark:bg-black">
+      <InfiniteMovingCards items={Logos} direction="right" speed="fast" />
     </div>
   );
 }

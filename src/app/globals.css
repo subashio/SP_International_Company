@@ -23,14 +23,14 @@ body {
     --popover: 0 0% 100%;
     --popover-foreground: 224 71.4% 4.1%;
 
-    --primary: 211 72% 50%;
-    --primary-foreground: 211 7.199999999999999% 5%;
-
-    --secondary: 211 36% 15%;
-    --secondary-foreground: 211 7.199999999999999% 97.5%;
-
-    --accent: 211 36% 15%;
-    --accent-foreground: 211 7.199999999999999% 97.5%;
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 20% 98%;
@@ -84,4 +84,7 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  /* .boxShadow {
+    @apply rounded-[10px] text-black shadow-[3px_-3px_36px_19px_rgba(0,0,0,0.05)_inset];
+  } */
 }

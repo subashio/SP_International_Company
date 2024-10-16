@@ -1,120 +1,180 @@
+export const Logos: TLogos[] = [
+  { id: 1, img: "/logos/modylogo.png", href: "/", alt: "modypumps" },
+  { id: 2, img: "/logos/cornell.png", href: "/", alt: "cornellpumps" },
+  { id: 3, img: "/logos/globlepump.png", href: "/", alt: "globalpumps" },
+  { id: 4, img: "/logos/tormaclogo.png", href: "/", alt: "tormacpumps" },
+];
+
+export const faqArry: TfaqArry[] = [
+  {
+    value: "item-1",
+    question: "what are software you use ?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ipsam corporis necessitatibus. Facere quia aperiam aliquam veniam sit vitae. Deleniti aliquid itaque ad officia, quis aperiam laudantium voluptatum exercitationem est.",
+  },
+  {
+    value: "item-2",
+    question: "How do I buy the projects",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ipsam corporis necessitatibus. Facere quia aperiam aliquam veniam sit vitae. Deleniti aliquid itaque ad officia, quis aperiam laudantium voluptatum exercitationem est.",
+  },
+  {
+    value: "item-3",
+    question: "How much for a sqt ?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ipsam corporis necessitatibus. Facere quia aperiam aliquam veniam sit vitae. Deleniti aliquid itaque ad officia, quis aperiam laudantium voluptatum exercitationem est.",
+  },
+  {
+    value: "item-4",
+    question: "How do I contact you ?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ipsam corporis necessitatibus. Facere quia aperiam aliquam veniam sit vitae. Deleniti aliquid itaque ad officia, quis aperiam laudantium voluptatum exercitationem est.",
+  },
+];
+
 export const card: TCard[] = [
   {
     id: 1,
     src: "/logos/hydraulics.png",
-    name: "HYDRAULICS",
+    name: "Hydraulics",
     href: "#",
     style: "",
+    type: "Services",
   },
   {
     id: 2,
     src: "/logos/hose.png",
-    name: "HOSE MANAGMENT",
+    name: "Hose Management",
     href: "#",
     style: " ",
+    type: "Product",
   },
   {
     id: 3,
     src: "/logos/pneumatics.png",
-    name: "PNEUMATICS",
+    name: "Pneumatics",
     href: "#",
     style: " ",
+    type: "Product",
   },
   {
     id: 4,
     src: "/logos/filteration.png",
-    name: "FILTRATION SYSTEM",
+    name: "Flitration System",
     href: "#",
     style: " ",
+    type: "Product",
   },
   {
     id: 5,
     src: "/logos/dewatering.png",
-    name: "DEWATERING",
+    name: "Dewatering",
     href: "#",
     style: " w-36",
+    type: "Product",
   },
   {
     id: 6,
     src: "/logos/electrical.png",
-    name: "ELECTRICAL & MECHANICAL SPARES",
+    name: "Electrical & Mechanical Spares",
     href: "#",
     style: " ",
+    type: "Product",
   },
   {
     id: 7,
     src: "/logos/pipeline.png",
-    name: "PIPELINE FLUSHING",
+    name: "Pipeline Flushing",
     href: "#",
     style: " w-36",
+    type: "Services",
   },
-  { id: 8, src: "/logos/pump.png", name: "PUMPS", href: "#", style: " w-24" },
+
+  {
+    id: 8,
+    src: "/logos/pump.png",
+    name: "Pumps",
+    href: "#",
+    style: " w-24",
+    type: "Product",
+  },
   {
     id: 9,
     src: "/logos/welding.png",
-    name: "WELDING SOLUTION",
+    name: "Welding Solution",
     href: "#",
     style: " w-24",
+    type: "Services",
   },
   {
     id: 10,
     src: "/logos/pipes.png",
-    name: "PIPES - FITTING FLANGES",
+    name: "Pipes - Fitting Flanges",
     href: "#",
     style: "  max-w-36",
+    type: "Product",
   },
   {
     id: 11,
     src: "/logos/valves.png",
-    name: "VALVES & ACTUATORS",
+    name: "Valves & Actuators",
     href: "#",
     style: "  w-20 max-w-36 ",
+    type: "Product",
   },
   {
     id: 12,
     src: "/logos/env.png",
-    name: "ENVIRONMENT SERVICES",
+    name: "Environment Services",
     href: "#",
     style: " w-12",
+    type: "Services",
   },
   {
     id: 13,
     src: "/logos/oilandgas.png",
-    name: "REFINIRIES OIL & GAS",
+    name: "Refiners Oil & Gas",
     href: "#",
     style: " w-36 ",
+    type: "Services",
   },
   {
     id: 14,
     src: "/logos/waterandwaste.png",
-    name: "WATER & WASTE WATER",
+    name: "Water & Waste Water",
     href: "#",
     style: " w-28",
+    type: "Services",
   },
-  { id: 15, src: "/logos/power.png", name: "POWER", href: "#", style: " w-28" },
+  {
+    id: 15,
+    src: "/logos/power.png",
+    name: "POWER",
+    href: "#",
+    style: " w-28",
+    type: "Services",
+  },
   {
     id: 16,
     src: "/logos/chemical.png",
-    name: "CHEMICAL & PROCESS",
+    name: "Chemical & Process",
     href: "#",
     style: " w-28",
+    type: "Services",
   },
 ];
 
 export const Nav: TNav[] = [
   { id: 1, name: "About", href: "/About" },
-  { id: 1, name: "Services", href: "#" },
-  { id: 1, name: "Products", href: "#" },
-  { id: 1, name: "Contact", href: "#" },
-  { id: 1, name: "FAQ", href: "#" },
+  { id: 2, name: "Contact", href: "/Contact" },
 ];
 
 export const list: TList[] = [
   { name: "Globle", id: 1 },
-  { name: "Quality", id: 1 },
-  { name: "Service", id: 1 },
-  { name: "Solution", id: 1 },
-  { name: "Commitment", id: 1 },
+  { name: "Quality", id: 2 },
+  { name: "Service", id: 3 },
+  { name: "Solution", id: 4 },
+  { name: "Commitment", id: 5 },
 ];
 
 export const feedbacks: TFeedbacks[] = [
@@ -142,7 +202,7 @@ export const Links: TNav[] = [
   { id: 1, name: "About", href: "#" },
   { id: 2, name: "Services", href: "#" },
   { id: 3, name: "Products", href: "#" },
-  { id: 5, name: "FAQ", href: "#" },
+  { id: 4, name: "FAQ", href: "#" },
 ];
 export const Links2: TNav[] = [
   { id: 1, name: "Twitter", href: "#" },
@@ -155,25 +215,29 @@ export const Links3: TNav[] = [
   { id: 2, name: "Licensing", href: "#" },
   { id: 3, name: "Terms", href: "#" },
 ];
-export const Links4: TNav[] = [
-  { id: 1, name: "Hydraulics", href: "#" },
-  { id: 2, name: "Hose Management", href: "#" },
-  { id: 3, name: "Pneumatics", href: "#" },
-  { id: 4, name: "Pumps", href: "#" },
-  { id: 5, name: "PipeLine", href: "#" },
-  { id: 6, name: "Dewatering", href: "#" },
-  { id: 7, name: "Flitration System", href: "#" },
-  { id: 8, name: "Electrical & Mechanical Spares", href: "#" },
-  { id: 9, name: "Valves & Actuators", href: "#" },
+export const Products: TNav[] = [
+  { id: 1, name: "Pumps", href: "Pumps" },
+  { id: 2, name: "Pneumatics", href: "Pneumatics" },
+  { id: 3, name: "Dewatering", href: "Dewatering" },
+  { id: 4, name: "Hose Management", href: "HoseManagement" },
+  { id: 5, name: "Flitration System", href: "FlitrationSystem" },
+  { id: 6, name: "Valves & Actuators", href: "ValvesandActuators" },
+  { id: 7, name: "Pipes - Fitting Flanges", href: "Pipes" },
+  {
+    id: 8,
+    name: "Electrical & Mechanical Spares",
+    href: "ElectricalandMechanicalSpares",
+  },
 ];
-export const Links5: TNav[] = [
-  { id: 1, name: "Pipeline Flushing", href: "#" },
-  { id: 2, name: "Environment Services", href: "#" },
-  { id: 3, name: "Refiners Oil & Gas", href: "#" },
-  { id: 4, name: "Water & Waste Water", href: "#" },
-  { id: 5, name: "Power", href: "#" },
-  { id: 6, name: "Chemical & Process", href: "#" },
-  { id: 7, name: "Welding Solution", href: "#" },
+export const Services: TNav[] = [
+  { id: 1, name: "Power", href: "Power" },
+  { id: 2, name: "Hydraulics", href: "Hydraulics" },
+  { id: 3, name: "Welding Solution", href: "WeldingSolution" },
+  { id: 4, name: "Pipeline Flushing", href: "Pipeline Flushing" },
+  { id: 5, name: "Environment Services", href: "#" },
+  { id: 6, name: "Refiners Oil & Gas", href: "#" },
+  { id: 7, name: "Water & Waste Water", href: "#" },
+  { id: 8, name: "Chemical & Process", href: "#" },
 ];
 
 export const footerSvg: TfooterSvg[] = [
@@ -195,13 +259,14 @@ export const footerSvg: TfooterSvg[] = [
   },
 ];
 
-export const ProductCard: TProductCard[] = [
+export const DProductCard: TProductCard[] = [
   {
     id: 1,
     name: "Pneumatics",
     description:
       "We offer a wide ranpe Pneumatic components such as Cylinders, Directional Valves, Filters and more",
     img: "/pictures/penu.png",
+    type: "Product",
   },
   {
     id: 2,
@@ -209,35 +274,17 @@ export const ProductCard: TProductCard[] = [
     description:
       "We offer a wide ranpe Pneumatic components such as Cylinders, Directional Valves, Filters and more",
     img: "/pictures/pumps.png",
+    type: "Product",
   },
 
   {
     id: 3,
-    name: "Valves",
+    name: "Valves & Actuators",
     description:
       "Carbon Steels, Low Temperature Carbon Steel, Martensitic Steels and more",
-    img: "/pictures/valves.png",
-  },
-  {
-    id: 4,
-    name: "Valves",
-    description:
-      "Carbon Steels, Low Temperature Carbon Steel, Martensitic Steels and more",
-    img: "/pictures/valves.png",
-  },
-  {
-    id: 5,
-    name: "Valves",
-    description:
-      "Carbon Steels, Low Temperature Carbon Steel, Martensitic Steels and more",
-    img: "/pictures/valves.png",
-  },
-  {
-    id: 6,
-    name: "Valves",
-    description:
-      "Carbon Steels, Low Temperature Carbon Steel, Martensitic Steels and more",
-    img: "/pictures/valves.png",
+    img: "/pictures/valve1.png",
+    className: "",
+    type: "Product",
   },
 ];
 

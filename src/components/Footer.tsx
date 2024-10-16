@@ -4,12 +4,11 @@ import {
   Links,
   Links2,
   Links3,
-  Links4,
-  Links5,
+  Products,
+  Services,
 } from "@/constants/detailes";
 import Link from "next/link";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import { ArrowUpFromDot } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -22,11 +21,11 @@ export default function Footer() {
                 products
               </h3>
               <ul className="text-xs text-gray-500 dark:text-gray-400">
-                {Links4.map((item) => (
+                {Products.map((item) => (
                   <li key={item.id} className="mb-4">
-                    <a href={item.href} className="hover:underline">
+                    <Link href={item.href} className="hover:underline">
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -36,11 +35,11 @@ export default function Footer() {
                 Services
               </h3>
               <ul className="text-xs text-gray-500 dark:text-gray-400">
-                {Links5.map((item) => (
+                {Services.map((item) => (
                   <li key={item.id} className="mb-4">
-                    <a href={item.href} className="hover:underline">
+                    <Link href={item.href} className="hover:underline">
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -107,9 +106,8 @@ export default function Footer() {
             </span>
             <ul className="mt-5 flex justify-center space-x-5">
               {footerSvg.map((item) => (
-                <li>
+                <li key={item.id}>
                   <Link
-                    key={item.id}
                     href="#"
                     className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                   >

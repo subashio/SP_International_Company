@@ -5,24 +5,31 @@ declare global {
     children: ReactNode;
     className?: string;
   }
+  interface TLogos {
+    id: string | number;
+    href: string;
+    img: string;
+    alt: string;
+  }
   type TNav = {
-    id: number;
-    name: string | ReactNode;
+    id: string | number;
+    name: string;
     href: string;
   };
   type TCard = {
-    id: number;
-    name: string | ReactNode;
+    id: string | number;
+    name: string;
     src: string;
     href: string;
     style: string;
+    type: "Product" | "Services";
   };
   type TList = {
-    id: number;
+    id: string | number;
     name: string;
   };
   type TFeedbacks = {
-    id: number;
+    id: string | number;
     avatar: string;
     message: string;
     Qoutes: string;
@@ -30,20 +37,80 @@ declare global {
     position: string;
   };
   type TfooterSvg = {
-    id: number;
+    id: string | number;
     d: string;
   };
 
   type TProductCard = {
-    id: number;
-    name: String;
+    id?: string | number;
+    name: string;
     description: string;
     img: string | undefined;
+    className?: string;
+    type: "Product" | "Services";
   };
   type TAboutCards = {
-    id: number;
-    name: String;
+    id: string | number;
+    name: string;
     description: string;
     img: string | undefined;
   };
+  interface ImageArrayItem {
+    name?: string;
+    img: string;
+    logo?: string | undefined;
+    className?: string;
+  }
+  interface TormacPumpData {
+    QRcode?: string | undefined;
+  }
+
+  interface ProductImageProps {
+    imgArray: ImageArrayItem[];
+    Details: TProductDetails | undefined;
+  }
+  interface Points {
+    content: string;
+  }
+  type TProductDetails = {
+    id: number;
+    title: string;
+    description: String;
+    className?: string;
+    img: string;
+    imgArray: ImageArrayItem[];
+    points?: Points[];
+    points2?: Points[];
+    subTitles: string[];
+    pumpsData?: TormacPumpData[];
+  };
+  type TServicesDetails = {
+    id: number;
+    title: string;
+    description: String;
+    className?: string;
+    img: string;
+    imgArray: ImageArrayItem[];
+    points?: Points[];
+    points2?: Points[];
+    subTitles: string[];
+    pumpsData?: TormacPumpData[];
+  };
+  type TfaqArry = {
+    value: string;
+    answer: string;
+    question: string;
+  };
+  interface ContactMessage {
+    name: string;
+    email: string;
+    phone: string;
+    message: string;
+  }
+  interface PumpData {
+    id: string;
+    name: string;
+    description: string;
+    imageUrl: string;
+  }
 }

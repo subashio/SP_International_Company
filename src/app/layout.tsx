@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import Navbar from "../components/Navbar";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
 const fontSans = FontSans({
   weight: ["300", "400", "500", "700", "900", "200"],
@@ -33,6 +34,8 @@ export default function RootLayout({
           <Navbar />
 
           {children}
+
+          <Toaster />
           <Footer />
         </main>
       </body>

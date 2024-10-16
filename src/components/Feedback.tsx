@@ -10,6 +10,8 @@ import {
 import { type CarouselApi } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { feedbacks } from "@/constants/detailes";
+import { motion } from "framer-motion";
+import { slidedownAnimation } from "@/constants/amination";
 
 export default function Feedback() {
   const [api, setApi] = useState<CarouselApi>();
@@ -34,7 +36,13 @@ export default function Feedback() {
   );
 
   return (
-    <div className="flex flex-col items-center bg-[#F9FAFB] py-20 text-center">
+    <motion.div
+      variants={slidedownAnimation}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+      className="flex flex-col items-center bg-[#F9FAFB] bg-fixed py-20 text-center"
+    >
       <h1 className="mb-16 text-4xl font-bold leading-none tracking-tight md:text-5xl">
         What Client's Say
       </h1>
@@ -43,7 +51,7 @@ export default function Feedback() {
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
         setApi={setApi}
-        className="w-full max-w-sm md:max-w-xl lg:max-w-4xl"
+        className="w-full max-w-sm overflow-hidden md:max-w-xl lg:max-w-4xl"
       >
         <CarouselContent className="cursor-pointer">
           {feedbacks.map((item) => (
@@ -69,6 +77,6 @@ export default function Feedback() {
       <div className="py-8 text-center text-sm text-muted-foreground">
         Slide {current} of {count}
       </div>
-    </div>
+    </motion.div>
   );
 }
