@@ -53,7 +53,6 @@ export default function Contact() {
     try {
       await sendContactForm(data);
       form.reset();
-      console.log(data);
       toast({
         variant: "default",
         title: "Project Uploaded",
@@ -69,7 +68,7 @@ export default function Contact() {
   }
   return (
     <div
-      className="my-20 flex flex-col items-center justify-center bg-cover bg-fixed bg-center bg-no-repeat py-20 bg-blend-soft-light"
+      className="flex flex-col items-center justify-center bg-cover bg-fixed bg-center bg-no-repeat py-20 bg-blend-soft-light"
       style={{ backgroundImage: "url(/pictures/contactBg1.png)" }}
     >
       <h1 className="my-8 flex w-full justify-center gap-3 text-center text-4xl font-bold tracking-tight text-white md:text-5xl">

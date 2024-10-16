@@ -1,14 +1,13 @@
 "use client";
-import { faqArry } from "@/constants/detailes";
+import { slidedownAnimation } from "@/constants/amination";
+import { motion } from "framer-motion";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
-import MaxWidthWrapper from "./MaxWidthWrapper";
-import { motion } from "framer-motion";
-import { slidedownAnimation } from "@/constants/amination";
 
 export default function Faq() {
   return (

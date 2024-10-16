@@ -2,13 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import React, {
-  MouseEventHandler,
-  ReactNode,
-  useEffect,
-  useState,
-} from "react";
+import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
   items,
@@ -94,7 +88,7 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]",
         )}
       >
-        {items.map((item, idx) => (
+        {items.map((item) => (
           <Link href={`/Products/${item.alt}`} key={item.id}>
             <img
               src={item.img}

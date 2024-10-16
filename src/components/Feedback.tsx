@@ -44,7 +44,7 @@ export default function Feedback() {
       className="flex flex-col items-center bg-[#F9FAFB] bg-fixed py-20 text-center"
     >
       <h1 className="mb-16 text-4xl font-bold leading-none tracking-tight md:text-5xl">
-        What Client's Say
+        What Client&apos;s Say
       </h1>
       <Carousel
         plugins={[plugin.current]}

@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { NavigationMenuLink } from "@radix-ui/react-navigation-menu";
+import { MotionProps } from "framer-motion";
 import React from "react";
 
 export const ListItem = React.forwardRef<
@@ -22,6 +23,7 @@ export const ListItem = React.forwardRef<
           {...props}
         >
           <div className="text-[14px] font-medium leading-4">{title}</div>
+          {children}
         </a>
       </NavigationMenuLink>
     </li>
