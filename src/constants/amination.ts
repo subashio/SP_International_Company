@@ -44,7 +44,7 @@ export const slidedownAnimation = {
     y: 0,
     transition: {
       delay: 0.5,
-      duration: 0.5,
+      duration: 0.2,
     },
   },
 };
@@ -74,7 +74,7 @@ export const slideLeftAnimation = {
     x: 0,
     transition: {
       delay: 0.5,
-      duration: 0.5,
+      duration: 0.2,
     },
   },
 };
@@ -88,7 +88,7 @@ export const slideRightAnimation = {
     x: 0,
     transition: {
       delay: 0.5,
-      duration: 0.5,
+      duration: 0.2,
     },
   },
 };
