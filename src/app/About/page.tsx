@@ -1,14 +1,7 @@
 "use client";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { buttonVariants } from "@/components/ui/button";
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import ScrollProgressBar from "@/components/ui/scroll-progress-bar";
-import { AboutCards } from "@/constants/detailes";
-import { cn } from "@/lib/utils";
-import { MoveRight } from "lucide-react";
-import Link from "next/link";
-import ProductCarousel from "./components/ProductCarousel";
-import { motion } from "framer-motion";
 import {
   fadeInAnimation,
   slidedownAnimation,
@@ -16,6 +9,11 @@ import {
   slideRightAnimation,
   slideupAnimation,
 } from "@/constants/amination";
+import { AboutCards } from "@/constants/detailes";
+import { motion } from "framer-motion";
+import { MoveRight } from "lucide-react";
+import Link from "next/link";
+import ProductCarousel from "./components/ProductCarousel";
 
 export default function About() {
   return (

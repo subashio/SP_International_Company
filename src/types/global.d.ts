@@ -75,7 +75,7 @@ declare global {
   type TProductDetails = {
     id: number;
     title: string;
-    description: String;
+    description: string;
     className?: string;
     img: string;
     imgArray: ImageArrayItem[];
@@ -87,7 +87,7 @@ declare global {
   type TServicesDetails = {
     id: number;
     title: string;
-    description: String;
+    description: string;
     className?: string;
     img: string;
     imgArray: ImageArrayItem[];

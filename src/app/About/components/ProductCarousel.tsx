@@ -1,5 +1,4 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -8,13 +7,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
-import { DProductCard } from "@/constants/detailes";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { useRouter } from "next/navigation";
-import { motion } from "framer-motion";
 import { fadeInAnimation } from "@/constants/amination";
+import { DProductCard } from "@/constants/detailes";
+import Autoplay from "embla-carousel-autoplay";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import React from "react";
 
 export default function ProductCarousel() {
   const plugin = React.useRef(

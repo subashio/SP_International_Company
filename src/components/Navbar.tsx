@@ -17,7 +17,7 @@ import { ListItem } from "./ListItem";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import MobileNav from "./MobileNav";
 
-export default function navbar() {
+export default function Navbar() {
   const router = useRouter();
   function handleClick(itemName: string, type: "Products" | "Services") {
     router.push(`/${type}/${encodeURIComponent(itemName)}`);
