@@ -24,7 +24,7 @@ export const InfiniteMovingCards = ({
   className?: string;
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLDivElement>(null);
+  const scrollerRef = React.useRef<HTMLUListElement>(null);
 
   useEffect(() => {
     addAnimation();
@@ -73,14 +73,14 @@ export const InfiniteMovingCards = ({
     }
   };
   return (
-    <section
+    <div
       ref={containerRef}
       className={cn(
         "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className,
       )}
     >
-      <div
+      <ul
         ref={scrollerRef}
         className={cn(
           "flex w-max min-w-full shrink-0 flex-nowrap items-center justify-center gap-10 md:gap-20",
@@ -89,15 +89,17 @@ export const InfiniteMovingCards = ({
         )}
       >
         {items.map((item) => (
-          <Link href={`/Products/${item.alt}`} key={item.id}>
-            <img
-              src={item.img}
-              alt={item.alt}
-              className={cn("h-8 cursor-pointer sm:h-12", className)}
-            />
-          </Link>
+          <li className="relative flex-shrink-0" key={item.id}>
+            <Link href={`/Products/${item.alt}`} key={item.id}>
+              <img
+                src={item.img}
+                alt={item.alt}
+                className={cn("h-8 cursor-pointer sm:h-12", className)}
+              />
+            </Link>
+          </li>
         ))}
-      </div>
-    </section>
+      </ul>
+    </div>
   );
 };
