@@ -1,8 +1,8 @@
 export const Logos: TLogos[] = [
-  { id: 1, img: "/logos/modylogo.png", href: "/", alt: "modypumps" },
-  { id: 2, img: "/logos/cornell.png", href: "/", alt: "cornellpumps" },
-  { id: 3, img: "/logos/globlepump.png", href: "/", alt: "globalpumps" },
-  { id: 4, img: "/logos/tormaclogo.png", href: "/", alt: "tormacpumps" },
+  { id: 1, img: "/logos/modylogo.png", alt: "modypumps" },
+  { id: 2, img: "/logos/cornell.png", alt: "cornellpumps" },
+  { id: 3, img: "/logos/globlepump.png", alt: "globalpumps" },
+  { id: 4, img: "/logos/tormaclogo.png", alt: "tormacpumps" },
 ];
 
 export const faqArry: TfaqArry[] = [

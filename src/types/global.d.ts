@@ -7,7 +7,7 @@ declare global {
   }
   interface TLogos {
     id: string | number;
-    href: string;
+    // href: string;
     img: string;
     alt: string;
   }
