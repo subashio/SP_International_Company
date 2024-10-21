@@ -14,7 +14,10 @@ const fontSans = FontSans({
 });
 export const metadata: Metadata = {
   title: "SP International Services ",
-  description: "",
+  description:
+    "SUPREME & PIONEER — SP INTERNATIONAL SERVICES (SP Co) is a solution providers with a wide plobal presence and offers Pumps, Motors, Valves, Hydraulics, Pipes, Wires & Cables, and Solar Pumping Systems and Industrial services. SP Group has a diversified range of products in its portfolio and the products cater to diverse segments such as: Chemical & Process, Power, Water & Waste Water, Oil & Gas, Pharma, Sugar & Distilleries, Paper & Pulp, Marine & Defence, Metal & Mining, Food & Beverage, Petrochemical & Refineries, Solar, Building, HVAC, Fire Fighting, Agriculture & Residential",
+  authors: [{ name: "Subash", url: "Git_hub" }],
+  keywords: "",
 };
 
 export default function RootLayout({

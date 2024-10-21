@@ -53,6 +53,11 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       colors: {
+        sky: {
+          50: "#ECF9FF",
+          450: "#23A0DA",
+          350: "#00AEFF",
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

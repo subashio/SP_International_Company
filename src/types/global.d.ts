@@ -1,10 +1,6 @@
 import { ReactNode } from "react";
 
 declare global {
-  interface children {
-    children: ReactNode;
-    className?: string;
-  }
   interface TLogos {
     id: string | number;
     // href: string;
@@ -58,7 +54,6 @@ declare global {
   interface ImageArrayItem {
     name?: string;
     img: string;
-    logo?: string | undefined;
     className?: string;
   }
   interface TormacPumpData {

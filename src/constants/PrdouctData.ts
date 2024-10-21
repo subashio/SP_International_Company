@@ -1,5 +1,6 @@
 import {
   CornellPumpImgArray,
+  DewateringImgArray,
   ElectricalMechanicalSpares,
   FilterationSytemImgArray,
   GloblePumpImgArray,
@@ -13,7 +14,7 @@ import {
 
 const productConfigs = {
   pumps: {
-    img: "/pictures/products.png",
+    img: "/pictures/background/products.png",
     imgArray: PumpImgArray,
     className: "text-4xl  md:text-5xl xl:text-6xl",
     subTitles: ["Our Featured Products"],
@@ -30,7 +31,7 @@ const productConfigs = {
     ],
   },
   modypumps: {
-    img: "/pictures/modypump1.png",
+    img: "/pictures/background/modypump.png",
     className: "text-4xl  md:text-5xl xl:text-6xl",
     subTitles: [
       "Dewatering,Slurry & Waste Water Markets",
@@ -52,7 +53,7 @@ const productConfigs = {
     ],
   },
   cornellpumps: {
-    img: "/pictures/cornellBg.png",
+    img: "/pictures/background/cornellBg.png",
     className: "text-4xl  md:text-5xl xl:text-6xl",
     subTitles: ["Our Products"],
     imgArray: CornellPumpImgArray,
@@ -65,7 +66,7 @@ const productConfigs = {
     ],
   },
   globalpumps: {
-    img: "/pictures/globalBg.jpg",
+    img: "/pictures/background/globalBg.jpg",
     className: "text-4xl  md:text-5xl xl:text-6xl",
     subTitles: ["Our Products"],
     imgArray: GloblePumpImgArray,
@@ -75,7 +76,7 @@ const productConfigs = {
     ],
   },
   tormacpumps: {
-    img: "/pictures/tormacBg.jpg",
+    img: "/pictures/background/tormacBg.jpg",
     imgArray: tormacPumpArray,
     className: "text-4xl  md:text-5xl xl:text-6xl",
     subTitles: ["THE RACE TO THE TOP", "Product Range"],
@@ -103,7 +104,7 @@ const productConfigs = {
     ],
   },
   valvesandactuators: {
-    img: "/pictures/valveBg.jpg",
+    img: "/pictures/background/valveBg.jpg",
     imgArray: valvesImgArray,
     className: "text-4xl  md:text-5xl xl:text-6xl",
     subTitles: ["Valves Range", "Actuators Range"],
@@ -134,7 +135,7 @@ const productConfigs = {
     ],
   },
   Pneumatic: {
-    img: "/pictures/pneuBg.jpg",
+    img: "/pictures/background/pneuBg.jpg",
     imgArray: PneumaticImgArray,
     className: "text-4xl  md:text-5xl xl:text-6xl",
     subTitles: ["Products", "Pneumatic Hose-Products"],
@@ -171,7 +172,7 @@ const productConfigs = {
     ],
   },
   Hosemanagement: {
-    img: "/pictures/hoseBg.jpg",
+    img: "/pictures/background/hoseBg.jpg",
     imgArray: HoseImgArray,
     className: "text-4xl  md:text-5xl xl:text-6xl",
     subTitles: ["Our Services", "Products"],
@@ -209,7 +210,7 @@ const productConfigs = {
     ],
   },
   filterationsystem: {
-    img: "/pictures/filterBg.png",
+    img: "/pictures/background/filterBg.png",
     imgArray: FilterationSytemImgArray,
     className: "text-4xl  md:text-5xl xl:text-6xl",
     subTitles: ["Products"],
@@ -225,9 +226,9 @@ const productConfigs = {
     ],
   },
   ElectricalMechanicalSpares: {
-    img: "/pictures/spareBg.jpg",
+    img: "/pictures/background/spareBg.jpg",
     imgArray: ElectricalMechanicalSpares,
-    className: "text-3xl  md:text-4xl xl:text-6xl",
+    className: "text-2xl  md:text-4xl xl:text-6xl",
     subTitles: ["Electrical Products", "Mechanical Products"],
 
     points: [
@@ -249,6 +250,44 @@ const productConfigs = {
       { content: "Steel rope" },
       { content: "Mechanical tools" },
       { content: "Air tools" },
+    ],
+  },
+  Dewatering: {
+    img: "/pictures/background/dewaterBg.jpg",
+    imgArray: DewateringImgArray,
+    className: "text-4xl  md:text-4xl xl:text-6xl",
+    subTitles: [
+      "Common Groundwater Control Techniques by Pumping",
+      "Less Common Dewatering Techniques",
+    ],
+
+    points: [
+      {
+        content:
+          "Sump Pumping: A basic and widely-used method where water is collected in a sump and pumped out.",
+      },
+      {
+        content:
+          "Wellpoints: A more advanced method using a series of small-diameter wells to lower the water table.",
+      },
+      {
+        content:
+          "Deep Wells: Suitable for deeper excavations, where deep wells are drilled and equipped with submersible pumps.",
+      },
+    ],
+    points2: [
+      {
+        content:
+          "Eductor Wells: Uses a venturi effect to draw groundwater out, ideal for low-permeability soils.",
+      },
+      {
+        content:
+          "Electro-osmosis: Employs electrical currents to move water, often used in fine-grained soils.",
+      },
+      {
+        content:
+          "Horizontal Wellpoints and Relief Wells: Specialized systems for controlling water flow in challenging conditions.",
+      },
     ],
   },
 };
@@ -310,7 +349,7 @@ export const ProductDetails: TProductDetails[] = [
   },
   {
     id: 9,
-    title: "Flitration System",
+    title: "Filtration System",
     description:
       "We have widest range of	equipment and solutions for all types of filtration",
     ...productConfigs.filterationsystem,
@@ -321,5 +360,12 @@ export const ProductDetails: TProductDetails[] = [
     description:
       "We specialize in the supply, installation, maintenance, and servicing of electromechanical components. With a diverse range of high-quality products, a competent team of engineers, and modern servicing equipment, we ensure top-tier solutions. Our expertise spans across electrical works, blower and boiler servicing, conveyor maintenance, and shearing/bending machine services. Partnering with world-renowned principals, we deliver reliable and efficient services tailored to meet your operational needs.",
     ...productConfigs.ElectricalMechanicalSpares,
+  },
+  {
+    id: 11,
+    title: "Dewatering",
+    description:
+      "Dewatering and water management are essential aspects of many construction or quarry operations. SP International Services(SP co) takes a planned and integrated approach towards water management, incorporating the overall construction development strategy, operational requirements, and environmental considerations.",
+    ...productConfigs.Dewatering,
   },
 ];

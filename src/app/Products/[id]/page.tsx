@@ -2,12 +2,12 @@
 import Collaburation from "@/components/Collaburation";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import ScrollProgressBar from "@/components/ui/scroll-progress-bar";
+import { opacityAnimation } from "@/constants/amination";
 import { ProductDetails } from "@/constants/PrdouctData";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 import ImageCard from "../../../components/ImageCard";
 import Points from "../../../components/Points";
-import { motion } from "framer-motion";
-import { slidedownAnimation, slideupAnimation } from "@/constants/amination";
 
 export default function page({ params }: { params: { id: string } }) {
   const { id } = params;
@@ -20,49 +20,52 @@ export default function page({ params }: { params: { id: string } }) {
   }
 
   return (
-    <section key={product.id}>
+    <section className="overflow-hidden" key={product.id}>
       <ScrollProgressBar type="circle" color="#00AEFF" showPercentage={true} />
 
       <div
-        className="relative flex h-60 flex-col items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat text-[#ffffff] xl:h-96"
+        className="relative flex h-60 flex-col items-center justify-center bg-cover bg-center bg-no-repeat text-[#ffffff] xl:h-96"
         style={{ backgroundImage: `url(${product.img})` }}
       >
+        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-[#11111191]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#111111a1]"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#11111191]"></div>
         <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[#111111a1]"></div>
         <motion.p
-          variants={slidedownAnimation}
+          variants={opacityAnimation}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="z-10 font-semibold text-[#a1d9f3]"
+          className="font-semibold text-sky-300"
         >
           Trusted Worldwide
         </motion.p>
         <motion.h1
-          variants={slidedownAnimation}
+          variants={opacityAnimation}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           className={cn(
-            "z-10 mb-2 font-bold uppercase leading-none tracking-wider",
+            "z-10 mb-2 border-l-4 border-sky-400 pl-2 font-bold uppercase leading-none tracking-wider",
             product.className,
           )}
         >
           {product.title}
         </motion.h1>
         <motion.p
-          variants={slidedownAnimation}
+          variants={opacityAnimation}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
+          className="font-semibold"
         >
-          Products{" "}
+          Products
         </motion.p>
       </div>
       {id == "Pumps" && <Collaburation />}
       <MaxWidthWrapper>
         <motion.p
-          variants={slideupAnimation}
+          variants={opacityAnimation}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}

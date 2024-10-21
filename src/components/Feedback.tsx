@@ -1,17 +1,17 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
-import { type CarouselApi } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
-import { feedbacks } from "@/constants/detailes";
-import { motion } from "framer-motion";
 import { slidedownAnimation } from "@/constants/amination";
+import { feedbacks } from "@/constants/detailes";
+import Autoplay from "embla-carousel-autoplay";
+import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
 
 export default function Feedback() {
   const [api, setApi] = useState<CarouselApi>();
@@ -41,7 +41,7 @@ export default function Feedback() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="flex flex-col items-center bg-[#F9FAFB] bg-fixed py-20 text-center"
+      className="flex flex-col items-center bg-gray-50 py-20 text-center"
     >
       <h1 className="mb-16 text-4xl font-bold leading-none tracking-tight md:text-5xl">
         What Client&apos;s Say

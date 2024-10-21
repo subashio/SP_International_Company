@@ -1,4 +1,5 @@
-import Logo from "@/components/Logo";
+"use client";
+import Logo from "@/components/ui/Logo";
 import {
   footerSvg,
   Links,
@@ -12,8 +13,8 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 export default function Footer() {
   return (
-    <MaxWidthWrapper className="">
-      <footer className="bg-white">
+    <footer className="">
+      <MaxWidthWrapper className="">
         <div className="mx-auto max-w-screen-xl p-4 py-6 md:p-8 lg:p-10 lg:py-16">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
             <nav>
@@ -23,7 +24,13 @@ export default function Footer() {
               <ul className="text-xs text-gray-500 dark:text-gray-400">
                 {Products.map((item) => (
                   <li key={item.id} className="mb-4">
-                    <Link href={item.href} className="hover:underline">
+                    <Link
+                      href={
+                        `/Products/${encodeURIComponent(item.name)}` ||
+                        item.href
+                      }
+                      className="hover:underline"
+                    >
                       {item.name}
                     </Link>
                   </li>
@@ -37,7 +44,13 @@ export default function Footer() {
               <ul className="text-xs text-gray-500 dark:text-gray-400">
                 {Services.map((item) => (
                   <li key={item.id} className="mb-4">
-                    <Link href={item.href} className="hover:underline">
+                    <Link
+                      href={
+                        `/Services/${encodeURIComponent(item.name)}` ||
+                        item.href
+                      }
+                      className="hover:underline"
+                    >
                       {item.name}
                     </Link>
                   </li>
@@ -111,14 +124,14 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                   >
-                    <Logo d={item.d} />
+                    <Logo d={item.d} className="border-none" />
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
         </div>
-      </footer>
-    </MaxWidthWrapper>
+      </MaxWidthWrapper>
+    </footer>
   );
 }

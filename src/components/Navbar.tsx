@@ -40,6 +40,7 @@ export default function Navbar() {
               className="mr-3 h-8 sm:h-10"
               alt="Logo"
             />
+
             <span className="self-center whitespace-nowrap font-semibold dark:text-white sm:text-xl">
               SP INTERNATIONAL SERVICES
             </span>

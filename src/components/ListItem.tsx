@@ -1,7 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { NavigationMenuLink } from "@radix-ui/react-navigation-menu";
-import { MotionProps } from "framer-motion";
 import React from "react";
 
 export const ListItem = React.forwardRef<

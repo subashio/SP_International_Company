@@ -96,6 +96,30 @@ export const HydraulicsImgArray: ImageArrayItem[] = [
   },
 ];
 
+export const WeldingImgArray: ImageArrayItem[] = [
+  { name: "MMA Welding", img: "/pictures/weld1.jpg ", className: "w-full" },
+  {
+    name: "Plasma Cutting",
+    img: "/pictures/weld2.jpeg ",
+    className: "w-full",
+  },
+  {
+    name: "Laser Cladding",
+    img: "/pictures/weld3.jpg ",
+    className: "w-full",
+  },
+  {
+    name: "Hot Flame Sprayin",
+    img: "/pictures/weld4.jpg ",
+    className: "w-full",
+  },
+  {
+    name: "HVOF Spraying",
+    img: "/pictures/weld5.jpg ",
+    className: "w-full",
+  },
+];
+
 export const ModyPumpImgArray: ImageArrayItem[] = [
   {
     name: "DEWATERING PUMPS",
@@ -114,7 +138,7 @@ export const ModyPumpImgArray: ImageArrayItem[] = [
   },
 ];
 
-export const CornellPumpImgArray = [
+export const CornellPumpImgArray: ImageArrayItem[] = [
   {
     name: "HYDRO-TRANSPORT FOOD PUMPS",
     img: "/pictures/pump19.png",
@@ -137,7 +161,7 @@ export const CornellPumpImgArray = [
   },
 ];
 
-export const GloblePumpImgArray = [
+export const GloblePumpImgArray: ImageArrayItem[] = [
   {
     name: "STANDARD TRASH PUMPS ",
     img: "/pictures/pump24.png",
@@ -147,14 +171,16 @@ export const GloblePumpImgArray = [
     img: "/pictures/pump25.png",
   },
 ];
-export const tormacPumpArray = [
+export const tormacPumpArray: ImageArrayItem[] = [
   {
     name: " STAINLESS STEEL SUBMERSIBLE PUMPS 4''/6''/8''/10''  TS / TN - SERIES ",
     img: "/pictures/steel1.png",
+    className: "w-[200px]",
   },
   {
     name: "CASTED STAINLESS STEELSUBMERSIBLE PUMPS 8''&10'' TCS & TCN - SERIES",
     img: "/pictures/steel2.png",
+    className: "w-[100px]",
   },
   {
     name: "CAST IRON SUBMERSIBLE PUMPS 6''/8'' TC - SERIES",
@@ -163,6 +189,7 @@ export const tormacPumpArray = [
   {
     name: "WATER FILLED OIL FILLED SUBMERSIBLE  MOTORS 4''/6''/8''/10''  D & N - SERIES",
     img: "/pictures/steel4.png",
+    className: "w-[200px]",
   },
   {
     name: " THERMOPLASTIC SUBMERSIBLE PUMPS 4'' TP & TV - SERIES",
@@ -171,46 +198,57 @@ export const tormacPumpArray = [
   {
     name: "SUBMERSIBLE PUMP KIT TSPK - SERIES (JUMBO PACK)",
     img: "/pictures/steel6.png",
+    className: "w-[200px]",
   },
   {
     name: "OPEN WELL SUBMERSIBLE PUMPS TOH/TOV - SERIES",
     img: "/pictures/steel7.png",
+    className: "w-[200px]",
   },
   {
     name: "SEWAGE SUBMERSIBLE PUMPS",
     img: "/pictures/steel8.png",
+    className: "w-[200px]",
   },
   {
     name: " MINI SEWAGE & DRAINAGE PUMPS TPS & TSS SERIES",
     img: "/pictures/steel9.png",
+    className: "w-[200px]",
   },
   {
     name: " PERIPHERAL PUMPS TEP  - SERIES ",
     img: "/pictures/steel10.png",
+    className: "w-[200px]",
   },
   {
     name: "  CENTRIFUGAL MONOBLOCK PUMPS TM  - SERIES",
     img: "/pictures/steel11.png",
+    className: "w-[200px]",
   },
   {
     name: "CLOSE COUPLED PUMPS TCCW - SERIES",
     img: "/pictures/steel12.png",
+    className: "w-[200px]",
   },
   {
     name: "END SUCTION PUMPS TE - SERIES",
     img: "/pictures/steel13.png",
+    className: "w-[200px]",
   },
   {
     name: "SPLIT CASE  PUMPS THSC - SERIES",
     img: "/pictures/steel14.png",
+    className: "w-[200px]",
   },
   {
     name: "HORIZONTAL MULTISTAGE PUMPS TH - SERIES",
     img: "/pictures/steel15.png",
+    className: "w-[200px]",
   },
   {
     name: "HORIZONTAL MULTISTAGE PUMPS THM - SERIES",
     img: "/pictures/steel16.png",
+    className: "w-[200px]",
   },
   {
     name: " VERTICAL MULTISTAGE PUMPS TV - SERIES",
@@ -219,6 +257,7 @@ export const tormacPumpArray = [
   {
     name: " PRESSURE BOOSTING SYSTEM TH & TV - SERIES",
     img: "/pictures/steel18.png",
+    className: "w-[200px]",
   },
   {
     name: "VERTICAL TURBINE PUMPS TVT - SERIES",
@@ -227,34 +266,41 @@ export const tormacPumpArray = [
   {
     name: "DEWATERING PUMPS TDW - SERIES",
     img: "/pictures/steel20.png",
+    className: "w-[200px]",
   },
   {
     name: " INDUCTION MOTOR",
     img: "/pictures/steel21.png",
+    className: "w-[200px]",
   },
   {
     name: "  SWIMMING POOL PUMPS TSW - SERIES",
     img: "/pictures/steel22.png",
+    className: "w-[200px]",
   },
   {
     name: " uPVC RISER PIPES",
     img: "/pictures/steel23.png",
+    className: "w-[200px]",
   },
   {
     name: "uPVC WELL CASING & SCREEN PIPES",
     img: "/pictures/steel24.png",
+    className: "w-[200px]",
   },
   {
     name: "CONTROL BOXES / PANELS",
     img: "/pictures/steel25.png",
+    className: "w-[200px]",
   },
   {
     name: " SUBMERSIBLE CABLES TC - SERIES",
     img: "/pictures/steel26.png",
+    className: "w-[200px]",
   },
 ];
 
-export const valvesImgArray = [
+export const valvesImgArray: ImageArrayItem[] = [
   {
     name: "Gate Valve",
     img: "/pictures/valve1.png",
@@ -345,7 +391,7 @@ export const valvesImgArray = [
   },
 ];
 
-export const PneumaticImgArray = [
+export const PneumaticImgArray: ImageArrayItem[] = [
   {
     name: "Pneumatic fittings",
     img: "/pictures/Pneu1.jpg",
@@ -384,7 +430,7 @@ export const PneumaticImgArray = [
   },
 ];
 
-export const HoseImgArray = [
+export const HoseImgArray: ImageArrayItem[] = [
   {
     name: "layflat hose",
     img: "/pictures/hose1.jpg",
@@ -420,7 +466,7 @@ export const HoseImgArray = [
   },
 ];
 
-export const FilterationSytemImgArray = [
+export const FilterationSytemImgArray: ImageArrayItem[] = [
   {
     name: "Cartridge Filter",
     img: "/pictures/filter1.png",
@@ -443,7 +489,7 @@ export const FilterationSytemImgArray = [
   },
 ];
 
-export const ElectricalMechanicalSpares = [
+export const ElectricalMechanicalSpares: ImageArrayItem[] = [
   {
     name: "LV & HV Cables",
     img: "/pictures/spare1.png",
@@ -467,5 +513,83 @@ export const ElectricalMechanicalSpares = [
   {
     name: "V- Belt",
     img: "/pictures/spare6.png",
+  },
+];
+
+export const DewateringImgArray: ImageArrayItem[] = [
+  {
+    name: "Dewatering process",
+    img: "/pictures/dewater1.png",
+    className: "w-full",
+  },
+  {
+    name: " Sump Pumping",
+    img: "/pictures/dewater2.png",
+    className: "w-full",
+  },
+  {
+    name: "wellpoint systems",
+    img: "/pictures/dewater3.png",
+    className: "w-full",
+  },
+  {
+    name: " Deep Well System",
+    img: "/pictures/dewater4.png",
+    className: "w-full",
+  },
+];
+
+export const PipelineFlusingImgArray: ImageArrayItem[] = [
+  {
+    name: "industrial pipeline filter separator",
+    img: "/pictures/pipe1.png",
+    className: "w-full",
+  },
+  {
+    name: "pipeline Flushing",
+    img: "/pictures/pipe2.png",
+    className: "w-full",
+  },
+  {
+    name: "Flushing",
+    img: "/pictures/pipe3.png",
+    className: "w-full",
+  },
+  {
+    name: " Cold Cutting",
+    img: "/pictures/pipe4.png",
+    className: "w-full",
+  },
+];
+
+export const envImgArray: ImageArrayItem[] = [
+  {
+    name: "",
+    img: "/pictures/env1.jpg",
+  },
+];
+
+export const oilandgasImgArray: ImageArrayItem[] = [
+  {
+    name: "",
+    img: "/pictures/oil1.png",
+  },
+];
+export const waterandwasteImgArray: ImageArrayItem[] = [
+  {
+    name: "",
+    img: "/pictures/water1.png",
+  },
+];
+export const chemicalandProccessImgArray: ImageArrayItem[] = [
+  {
+    name: "Chemical Decontamination",
+    img: "/pictures/chemical1.png",
+    className: "w-full",
+  },
+  {
+    name: "Chemical Cleaning",
+    img: "/pictures/chemical2.png",
+    className: "w-full",
   },
 ];

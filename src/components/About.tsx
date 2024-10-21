@@ -27,7 +27,7 @@ export default function About() {
 
         <Link
           href="/About"
-          className="group inline-flex w-full items-center justify-center rounded-lg border-2 bg-[#23A0DA] px-5 py-3 text-center text-sm font-medium text-white shadow-xl transition-all duration-500 hover:border-[#23A0DA] hover:bg-white hover:text-black sm:w-auto"
+          className="bg-sky-450 hover:border-sky-450 group inline-flex w-full items-center justify-center rounded-lg border-2 border-transparent px-5 py-3 text-center text-sm font-medium text-white shadow-xl transition-all duration-500 hover:bg-white hover:text-black sm:w-auto"
         >
           Known More
           <MoveRight className="ml-2 h-4 w-6 transition-transform duration-500 group-hover:translate-x-2" />

@@ -1,7 +1,9 @@
 "use client";
 import { Card, CardContent } from "@/components/ui/card";
 import { fadeInAnimation } from "@/constants/amination";
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ImageCard({ imgArray, Details }: ProductImageProps) {
   return (
@@ -24,15 +26,15 @@ export default function ImageCard({ imgArray, Details }: ProductImageProps) {
                 className="group flex h-[400px] w-full cursor-pointer flex-col items-center justify-around p-4 transition-all duration-700 hover:border hover:border-[#23A0DA] sm:w-auto md:w-[350px] lg:w-auto"
               >
                 <CardContent className="flex w-96 items-center justify-center">
-                  <img
+                  <Image
+                    width={200}
+                    height={200}
                     src={item.img}
-                    className="relative h-[200px] w-[200px] object-contain transition-all duration-700 group-hover:scale-110"
+                    className={cn(
+                      "relative h-[200px] w-[200px] object-contain transition-all duration-700 group-hover:scale-110",
+                      item.className,
+                    )}
                     alt={`product-image-${index}`}
-                  />
-                  <img
-                    className="absolute right-0 w-20"
-                    src={item.logo}
-                    alt=""
                   />
                 </CardContent>
 
@@ -62,19 +64,16 @@ export default function ImageCard({ imgArray, Details }: ProductImageProps) {
                 className="group relative flex h-[400px] w-full cursor-pointer flex-col items-center justify-around p-4 transition-all duration-700 hover:border hover:border-[#23A0DA] sm:w-auto md:w-[350px] lg:w-auto"
               >
                 <CardContent className="flex w-96 flex-col items-center justify-center">
-                  <img
+                  <Image
+                    width={120}
+                    height={100}
                     src={item.img}
-                    className="transition-all duration-700 group-hover:scale-110"
+                    className={cn(
+                      "transition-all duration-700 group-hover:scale-110",
+                      item.className,
+                    )}
                     alt={`product-image-${index}`}
                   />
-                  {/* <img
-              className="absolute right-2 top-2 w-14 transition-all duration-700 group-hover:scale-50"
-              src={item.logo}
-              alt=""
-            />
-            <p className="absolute right-2.5 top-16 text-sm transition-all duration-700 group-hover:-translate-y-4 group-hover:scale-50">
-              Scan QR
-            </p> */}
                 </CardContent>
 
                 <div className="flex flex-col items-center justify-around">

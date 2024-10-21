@@ -8,7 +8,7 @@ export const fadeInAnimation = {
     y: 0,
     transition: {
       delay: 0.05 * index,
-      duration: 0.5,
+      duration: 0.3,
     },
   }),
 };
@@ -20,8 +20,8 @@ export const container = {
     scale: 1,
     transition: {
       delayChildren: 0.3,
-      staggerChildren: 0.2,
-      duration: 0.5,
+      staggerChildren: 0.05,
+      duration: 0.3,
     },
   },
 };
@@ -86,6 +86,20 @@ export const slideRightAnimation = {
   animate: {
     opacity: 1,
     x: 0,
+    transition: {
+      delay: 0.5,
+      duration: 0.2,
+    },
+  },
+};
+
+export const opacityAnimation = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+
     transition: {
       delay: 0.5,
       duration: 0.2,

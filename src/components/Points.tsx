@@ -1,7 +1,6 @@
 "use client";
-import React from "react";
+import { container, listItem, opacityAnimation } from "@/constants/amination";
 import { motion } from "framer-motion";
-import { container, listItem, slidedownAnimation } from "@/constants/amination";
 
 export default function Points({
   title,
@@ -13,7 +12,7 @@ export default function Points({
   return (
     <div className="mb-10">
       <motion.h1
-        variants={slidedownAnimation}
+        variants={opacityAnimation}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}

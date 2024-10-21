@@ -30,7 +30,7 @@ export default function ProductCarousel() {
       opts={{
         align: "start",
       }}
-      className="w-full max-w-[390px] overflow-hidden md:max-w-2xl lg:max-w-[1500px]"
+      className="w-full max-w-[390px] md:max-w-2xl lg:max-w-[1500px]"
     >
       <CarouselContent className="!z-10">
         {DProductCard.map((item, index) => (
@@ -48,15 +48,15 @@ export default function ProductCarousel() {
                 }}
                 custom={index}
                 whileHover={{ scale: 0.95, transition: { duration: 0.02 } }}
-                className="flex h-full flex-col items-center justify-between transition-all duration-300 hover:border-[#00AEFF]"
+                className="flex h-full flex-col items-center justify-around transition-all duration-300 hover:border-sky-500"
               >
-                <CardContent className="flex h-full flex-col items-center justify-between gap-4">
+                <CardContent className="flex h-full flex-col items-center justify-around gap-4 py-4">
                   <img src={item.img} alt="Product Image" className="" />
 
                   <h1 className="my-2 text-xl font-semibold uppercase">
                     {item.name}
                   </h1>
-                  <p>{item.description}</p>
+                  <p className="text-center">{item.description}</p>
                 </CardContent>
               </Card>
             </Link>

@@ -4,7 +4,7 @@ import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import ScrollProgressBar from "@/components/ui/scroll-progress-bar";
 import {
   fadeInAnimation,
-  slidedownAnimation,
+  opacityAnimation,
   slideLeftAnimation,
   slideRightAnimation,
   slideupAnimation,
@@ -17,11 +17,11 @@ import ProductCarousel from "./components/ProductCarousel";
 
 export default function About() {
   return (
-    <section>
+    <section className="overflow-hidden">
       <ScrollProgressBar type="circle" color="#00AEFF" showPercentage={true} />
-      <div className="flex h-80 flex-col items-center justify-center overflow-hidden bg-[url('/pictures/about1.png')] bg-cover bg-left-bottom bg-no-repeat text-[#ffffff] xl:h-96">
+      <div className="flex h-80 flex-col items-center justify-center bg-[url('/pictures/background/about1.png')] bg-cover bg-left-bottom bg-no-repeat text-[#ffffff] xl:h-96">
         <motion.p
-          variants={slidedownAnimation}
+          variants={opacityAnimation}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
@@ -30,7 +30,7 @@ export default function About() {
           Trusted Worldwide
         </motion.p>
         <motion.h1
-          variants={slidedownAnimation}
+          variants={opacityAnimation}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
@@ -147,7 +147,7 @@ export default function About() {
       <div className="bg-[#F2F4F6] py-20">
         <MaxWidthWrapper className="flex flex-col items-center justify-center">
           <motion.h1
-            variants={slideupAnimation}
+            variants={opacityAnimation}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
@@ -160,7 +160,7 @@ export default function About() {
           </div>
           <Link
             href="/Products/Pumps"
-            className="group inline-flex w-full items-center justify-center rounded-lg border-2 bg-[#23A0DA] px-5 py-3 text-center text-sm font-medium text-white shadow-xl transition-all duration-500 hover:border-[#23A0DA] hover:bg-white hover:text-black sm:w-auto"
+            className="bg-sky-450 hover:border-sky-450 group inline-flex w-full items-center justify-center rounded-lg border-2 border-transparent px-5 py-3 text-center text-sm font-medium text-white shadow-xl transition-all duration-500 hover:bg-white hover:text-black sm:w-auto"
           >
             Explore More
             <MoveRight className="ml-2 h-4 w-6 transition-transform duration-500 group-hover:translate-x-2" />
