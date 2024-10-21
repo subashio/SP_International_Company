@@ -108,14 +108,6 @@ export const card: TCard[] = [
   },
   {
     id: 10,
-    src: "/logos/pipes.png",
-    name: "Pipes - Fitting Flanges",
-    href: "#",
-    style: "  max-w-36",
-    type: "Product",
-  },
-  {
-    id: 11,
     src: "/logos/valves.png",
     name: "Valves & Actuators",
     href: "#",
@@ -123,7 +115,7 @@ export const card: TCard[] = [
     type: "Product",
   },
   {
-    id: 12,
+    id: 11,
     src: "/logos/env.png",
     name: "Environment Services",
     href: "#",
@@ -131,7 +123,7 @@ export const card: TCard[] = [
     type: "Services",
   },
   {
-    id: 13,
+    id: 12,
     src: "/logos/oilandgas.png",
     name: "Refiners Oil & Gas",
     href: "#",
@@ -139,7 +131,7 @@ export const card: TCard[] = [
     type: "Services",
   },
   {
-    id: 14,
+    id: 13,
     src: "/logos/waterandwaste.png",
     name: "Water & Waste Water",
     href: "#",
@@ -147,7 +139,7 @@ export const card: TCard[] = [
     type: "Services",
   },
   {
-    id: 15,
+    id: 14,
     src: "/logos/power.png",
     name: "POWER",
     href: "#",
@@ -155,7 +147,7 @@ export const card: TCard[] = [
     type: "Services",
   },
   {
-    id: 16,
+    id: 15,
     src: "/logos/chemical.png",
     name: "Chemical & Process",
     href: "#",
