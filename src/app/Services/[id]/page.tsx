@@ -89,8 +89,9 @@ export default function page({ params }: { params: { id: string } }) {
             viewport={{ once: true }}
             className="py-8 lg:w-1/2 lg:grid-cols-12 lg:place-self-start xl:flex xl:w-1/2 xl:justify-start"
           >
-            {Services.imgArray.map((img) => (
+            {Services.imgArray.map((img, index) => (
               <motion.img
+                key={index}
                 variants={listItem}
                 src={img.img}
                 alt="environment"
