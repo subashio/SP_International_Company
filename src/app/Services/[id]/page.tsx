@@ -18,7 +18,7 @@ export default function page({ params }: { params: { id: string } }) {
     return <p>Services not found {decodeURIComponent(id)}</p>;
   }
   return (
-    <section className="overflow-hidde" key={Services.id}>
+    <section className="overflow-hidden" key={Services.id}>
       <ScrollProgressBar type="circle" color="#00AEFF" showPercentage={true} />
 
       <div
@@ -95,7 +95,7 @@ export default function page({ params }: { params: { id: string } }) {
                 variants={listItem}
                 src={img.img}
                 alt="environment"
-                className="w-full shadow-xl"
+                className="h-auto w-full shadow-xl"
               />
             ))}
           </motion.div>

@@ -31,7 +31,7 @@ export default function ImageCard({ imgArray, Details }: ProductImageProps) {
                     height={200}
                     src={item.img}
                     className={cn(
-                      "relative h-[200px] w-[200px] object-contain transition-all duration-700 group-hover:scale-110",
+                      "relative h-auto w-auto object-contain transition-all duration-700 group-hover:scale-110",
                       item.className,
                     )}
                     alt={`product-image-${index}`}
@@ -69,7 +69,7 @@ export default function ImageCard({ imgArray, Details }: ProductImageProps) {
                     height={100}
                     src={item.img}
                     className={cn(
-                      "transition-all duration-700 group-hover:scale-110",
+                      "h-auto w-auto transition-all duration-700 group-hover:scale-110",
                       item.className,
                     )}
                     alt={`product-image-${index}`}

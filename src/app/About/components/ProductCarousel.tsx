@@ -48,7 +48,7 @@ export default function ProductCarousel() {
                 }}
                 custom={index}
                 whileHover={{ scale: 0.95, transition: { duration: 0.02 } }}
-                className="flex h-full flex-col items-center justify-around transition-all duration-300 hover:border-sky-500"
+                className="flex h-full flex-col items-center justify-around text-card-foreground transition-all duration-300 hover:border-sky-500"
               >
                 <CardContent className="flex h-full flex-col items-center justify-around gap-4 py-4">
                   <img src={item.img} alt="Product Image" className="" />

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section className="py-24" id="/About">
+    <section className="scroll-mt-20 py-24" id="about">
       <motion.div
         variants={slidedownAnimation}
         initial="initial"
@@ -27,7 +27,7 @@ export default function About() {
 
         <Link
           href="/About"
-          className="bg-sky-450 hover:border-sky-450 group inline-flex w-full items-center justify-center rounded-lg border-2 border-transparent px-5 py-3 text-center text-sm font-medium text-white shadow-xl transition-all duration-500 hover:bg-white hover:text-black sm:w-auto"
+          className="group inline-flex w-full items-center justify-center rounded-lg border-2 border-transparent bg-sky-450 px-5 py-3 text-center text-sm font-medium text-primary-foreground shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 hover:border-sky-450 hover:bg-white hover:text-black sm:w-auto"
         >
           Known More
           <MoveRight className="ml-2 h-4 w-6 transition-transform duration-500 group-hover:translate-x-2" />
@@ -38,7 +38,7 @@ export default function About() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="flex flex-wrap items-center justify-evenly gap-x-10 bg-[#D4F0FF] px-2.5 shadow-xl md:mx-auto md:h-16 md:flex-row"
+        className="flex h-20 flex-wrap items-center justify-evenly gap-x-6 bg-[#D4F0FF] px-2.5 shadow-xl sm:h-16 sm:gap-x-10 md:mx-auto md:flex-row"
       >
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#00aeff34]"></div>
         <div className="via-transpar= absolute inset-0 bg-gradient-to-l from-transparent to-[#00aeff34]"></div>
@@ -67,13 +67,13 @@ export default function About() {
           variants={listItem}
           src="/pictures/environment.png"
           alt="environment"
-          className="shadowxl w-full md:col-span-5"
+          className="w-full rounded-3xl md:col-span-5"
         />
         <motion.img
           variants={listItem}
           src="/pictures/valves_about.png"
           alt="environment"
-          className="hidden w-full rounded-xl md:col-span-5 xl:block"
+          className="hidden w-full rounded-3xl md:col-span-5 xl:block"
         />
       </motion.div>
     </section>

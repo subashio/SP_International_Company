@@ -2,9 +2,10 @@
 import { slideLeftAnimation, slideRightAnimation } from "@/constants/amination";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import Collaburation from "./Collaburation";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -29,17 +30,15 @@ export default function Hero() {
           </p>
           <div className="space-y-4 sm:flex sm:space-x-4 sm:space-y-0 lg:place-content-start">
             <Link
-              offset={-100}
-              to="/ProductsandServices"
-              className="bg-sky-450 hover:border-sky-450 inline-flex w-full cursor-pointer justify-center rounded-lg border-2 border-transparent px-5 py-3 text-center text-sm font-medium text-white shadow-xl transition duration-500 hover:bg-white hover:text-black sm:w-auto"
+              href="#ProductsandServices"
+              className="inline-flex w-full cursor-pointer justify-center rounded-lg border-2 border-transparent bg-sky-450 px-5 py-3 text-center text-sm font-medium text-primary-foreground shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition duration-500 hover:border-sky-450 hover:bg-white hover:text-black sm:w-auto"
             >
               Discover More
             </Link>
 
             <Link
-              to="/About"
-              offset={-100}
-              className="hover:text-sky-450 mb-2 mr-2 inline-flex w-full cursor-pointer items-center justify-center rounded-lg border-2 border-gray-200 border-transparent bg-white px-5 py-3 text-sm font-medium text-gray-900 shadow-xl transition duration-300 hover:border-sky-200 sm:w-auto"
+              href="#about"
+              className="mb-2 mr-2 inline-flex w-full cursor-pointer items-center justify-center rounded-lg border-2 border-gray-200 border-transparent bg-white px-5 py-3 text-sm font-medium text-secondary-foreground shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition duration-300 hover:border-sky-200 hover:text-sky-450 sm:w-auto"
             >
               About us
             </Link>
@@ -54,7 +53,13 @@ export default function Hero() {
           }}
           className="mt-10 lg:col-span-5 lg:mt-0 lg:flex"
         >
-          <Image width={600} height={200} src="/pictures/hero.png" alt="Logo" />
+          <Image
+            width={600}
+            height={200}
+            className="h-auto w-auto rounded-3xl md:shadow-[-16px_-16px_4px_2px_#00000049]"
+            src="/pictures/background/hero1.png"
+            alt="Logo"
+          />
         </motion.div>
       </MaxWidthWrapper>
       <Collaburation />

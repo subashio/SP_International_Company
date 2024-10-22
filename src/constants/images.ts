@@ -97,7 +97,11 @@ export const HydraulicsImgArray: ImageArrayItem[] = [
 ];
 
 export const WeldingImgArray: ImageArrayItem[] = [
-  { name: "MMA Welding", img: "/pictures/weld1.jpg ", className: "w-full" },
+  {
+    name: "MMA Welding",
+    img: "/pictures/weld1.jpg ",
+    className: "w-full",
+  },
   {
     name: "Plasma Cutting",
     img: "/pictures/weld2.jpeg ",
@@ -558,7 +562,7 @@ export const PipelineFlusingImgArray: ImageArrayItem[] = [
   {
     name: " Cold Cutting",
     img: "/pictures/pipe4.png",
-    className: "w-full",
+    className: "w-auto",
   },
 ];
 

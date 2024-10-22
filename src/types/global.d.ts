@@ -17,7 +17,7 @@ declare global {
     name: string;
     src: string;
     href: string;
-    style: string;
+    style?: string;
     type: "Product" | "Services";
   };
   type TList = {

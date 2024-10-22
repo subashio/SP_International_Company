@@ -38,7 +38,6 @@ export const card: TCard[] = [
     src: "/logos/hydraulics.png",
     name: "Hydraulics",
     href: "#",
-    style: "w-20",
     type: "Services",
   },
   {
@@ -46,7 +45,6 @@ export const card: TCard[] = [
     src: "/logos/hose.png",
     name: "Hose Management",
     href: "#",
-    style: " w-20",
     type: "Product",
   },
   {
@@ -54,15 +52,13 @@ export const card: TCard[] = [
     src: "/logos/pneumatics.png",
     name: "Pneumatics",
     href: "#",
-    style: " w-20",
     type: "Product",
   },
   {
     id: 4,
     src: "/logos/filteration.png",
-    name: "Flitration System",
+    name: "Filtration System",
     href: "#",
-    style: "w-20",
     type: "Product",
   },
   {
@@ -70,7 +66,6 @@ export const card: TCard[] = [
     src: "/logos/dewatering.png",
     name: "Dewatering",
     href: "#",
-    style: "w-44",
     type: "Product",
   },
   {
@@ -78,7 +73,6 @@ export const card: TCard[] = [
     src: "/logos/electrical.png",
     name: "Electrical & Mechanical Spares",
     href: "#",
-    style: " ",
     type: "Product",
   },
   {
@@ -86,7 +80,6 @@ export const card: TCard[] = [
     src: "/logos/pipeline.png",
     name: "Pipeline Flushing",
     href: "#",
-    style: " w-36",
     type: "Services",
   },
 
@@ -95,7 +88,6 @@ export const card: TCard[] = [
     src: "/logos/pump.png",
     name: "Pumps",
     href: "#",
-    style: " w-24",
     type: "Product",
   },
   {
@@ -103,7 +95,6 @@ export const card: TCard[] = [
     src: "/logos/welding.png",
     name: "Welding Solution",
     href: "#",
-    style: " w-24",
     type: "Services",
   },
   {
@@ -111,7 +102,6 @@ export const card: TCard[] = [
     src: "/logos/valves.png",
     name: "Valves & Actuators",
     href: "#",
-    style: "  w-20 max-w-36 ",
     type: "Product",
   },
   {
@@ -119,7 +109,6 @@ export const card: TCard[] = [
     src: "/logos/env.png",
     name: "Environment Services",
     href: "#",
-    style: " w-12",
     type: "Services",
   },
   {
@@ -127,7 +116,6 @@ export const card: TCard[] = [
     src: "/logos/oilandgas.png",
     name: "Refiners Oil & Gas",
     href: "#",
-    style: " w-36 ",
     type: "Services",
   },
   {
@@ -135,7 +123,6 @@ export const card: TCard[] = [
     src: "/logos/waterandwaste.png",
     name: "Water & Waste Water",
     href: "#",
-    style: " w-28",
     type: "Services",
   },
   {
@@ -143,7 +130,6 @@ export const card: TCard[] = [
     src: "/logos/power.png",
     name: "POWER",
     href: "#",
-    style: " w-28",
     type: "Services",
   },
   {
@@ -151,7 +137,6 @@ export const card: TCard[] = [
     src: "/logos/chemical.png",
     name: "Chemical & Process",
     href: "#",
-    style: " w-28",
     type: "Services",
   },
 ];

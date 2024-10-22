@@ -5,6 +5,7 @@ import { Inter as FontSans } from "next/font/google";
 import Navbar from "../components/Navbar";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const fontSans = FontSans({
   weight: ["300", "400", "500", "700", "900", "200"],
@@ -13,11 +14,31 @@ const fontSans = FontSans({
   fallback: ["Arial", "sans-serif"],
 });
 export const metadata: Metadata = {
-  title: "SP International Services ",
+  title: " SP International Services - Global Industrial Solutions Provider  ",
   description:
-    "SUPREME & PIONEER — SP INTERNATIONAL SERVICES (SP Co) is a solution providers with a wide plobal presence and offers Pumps, Motors, Valves, Hydraulics, Pipes, Wires & Cables, and Solar Pumping Systems and Industrial services. SP Group has a diversified range of products in its portfolio and the products cater to diverse segments such as: Chemical & Process, Power, Water & Waste Water, Oil & Gas, Pharma, Sugar & Distilleries, Paper & Pulp, Marine & Defence, Metal & Mining, Food & Beverage, Petrochemical & Refineries, Solar, Building, HVAC, Fire Fighting, Agriculture & Residential",
-  authors: [{ name: "Subash", url: "Git_hub" }],
-  keywords: "",
+    "SP International Services (SP Co) offers a global presence in Pumps, Valves, Hydraulics, Solar Pumping Systems, and more. Solutions for industries like Oil & Gas, Water Management, Chemical Processing, and more. Trusted worldwide!",
+  authors: [{ name: "Subash", url: "https://github.com/Git-Subash" }],
+  keywords: [
+    "Industrial Solutions Provider",
+    "Global Industrial Services",
+    "Pumps",
+    "Valves",
+    "Hydraulics",
+    "Oil & Gas Services",
+    "Water Management",
+    "Chemical Processing",
+    "Solar Pumping Systems",
+    "Power Generation Solutions",
+    "HVAC Systems",
+    "Firefighting Solutions",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "sp-international-company.vercel.app",
+  },
 };
 
 export default function RootLayout({
@@ -35,7 +56,7 @@ export default function RootLayout({
       >
         <main className="relative flex min-h-screen flex-col bg-cover bg-no-repeat">
           <Navbar />
-
+          <ScrollToTop />
           {children}
 
           <Toaster />

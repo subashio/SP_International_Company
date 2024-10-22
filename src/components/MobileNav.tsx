@@ -30,7 +30,11 @@ export default function MobileNav() {
         onOpenChange={(isOpen) => setIsSheetOpen(isOpen)}
       >
         <SheetTrigger asChild>
-          <Button variant="ghost" className="rounded-lg lg:hidden">
+          <Button
+            variant="ghost"
+            aria-label="Open Menu"
+            className="rounded-lg lg:hidden"
+          >
             <Menu />
           </Button>
         </SheetTrigger>
@@ -92,7 +96,7 @@ export default function MobileNav() {
             {Nav.map((item: TNav) => (
               <Link
                 key={item.id}
-                href={item.href || "#"}
+                href={item.name ? item.href : "#"}
                 onClick={() => setIsSheetOpen(false)}
                 className={cn(buttonVariants({ variant: "ghost" }), "w-full")}
               >

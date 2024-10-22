@@ -19,7 +19,7 @@ export default function About() {
   return (
     <section className="overflow-hidden">
       <ScrollProgressBar type="circle" color="#00AEFF" showPercentage={true} />
-      <div className="flex h-80 flex-col items-center justify-center bg-[url('/pictures/background/about1.png')] bg-cover bg-left-bottom bg-no-repeat text-[#ffffff] xl:h-96">
+      <div className="flex h-80 flex-col items-center justify-center bg-[url('/pictures/background/about.webp')] bg-cover bg-left-bottom bg-no-repeat text-[#ffffff] xl:h-96">
         <motion.p
           variants={opacityAnimation}
           initial="initial"
@@ -132,7 +132,7 @@ export default function About() {
               }}
               custom={index}
             >
-              <Card className="max-w-xl cursor-pointer border-none p-6 shadow-md transition-all duration-700 hover:bg-[#DDF5FF]">
+              <Card className="max-w-xl cursor-pointer rounded-3xl p-10 text-card-foreground transition-all duration-300 hover:bg-[#DDF5FF] hover:shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
                 <img src={item.img} alt="logo" className="h-10" />
                 <CardTitle className="my-4">{item.name}</CardTitle>
                 <CardDescription className="max-w-sm text-gray-500 xl:max-w-xl">
@@ -160,7 +160,7 @@ export default function About() {
           </div>
           <Link
             href="/Products/Pumps"
-            className="bg-sky-450 hover:border-sky-450 group inline-flex w-full items-center justify-center rounded-lg border-2 border-transparent px-5 py-3 text-center text-sm font-medium text-white shadow-xl transition-all duration-500 hover:bg-white hover:text-black sm:w-auto"
+            className="group inline-flex w-full items-center justify-center rounded-lg border-2 border-transparent bg-sky-450 px-5 py-3 text-center text-sm font-medium text-primary-foreground shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 hover:border-sky-450 hover:bg-white hover:text-black sm:w-auto"
           >
             Explore More
             <MoveRight className="ml-2 h-4 w-6 transition-transform duration-500 group-hover:translate-x-2" />

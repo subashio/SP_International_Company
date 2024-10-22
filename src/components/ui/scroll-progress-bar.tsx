@@ -54,8 +54,14 @@ export default function ScrollProgressBar({
   }
 
   return (
-    <Link
-      href="#"
+    <button
+      onClick={(e) => {
+        e.preventDefault(); // Prevent default behavior of `href="#"`
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Smooth scroll to the top
+        });
+      }}
       className={cn("fixed z-50 flex items-center justify-center", {
         "end-0 top-0": position === "top-right",
         "bottom-0 end-0": position === "bottom-right",
@@ -92,6 +98,6 @@ export default function ScrollProgressBar({
           )}
         </>
       )}
-    </Link>
+    </button>
   );
 }

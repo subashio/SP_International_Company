@@ -14,20 +14,21 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 export default function Footer() {
   return (
     <footer className="">
-      <MaxWidthWrapper className="">
+      <MaxWidthWrapper>
         <div className="mx-auto max-w-screen-xl p-4 py-6 md:p-8 lg:p-10 lg:py-16">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
             <nav>
-              <h3 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+              <h1 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
                 products
-              </h3>
+              </h1>
               <ul className="text-xs text-gray-500 dark:text-gray-400">
                 {Products.map((item) => (
                   <li key={item.id} className="mb-4">
                     <Link
                       href={
-                        `/Products/${encodeURIComponent(item.name)}` ||
-                        item.href
+                        item.name
+                          ? `/Products/${encodeURIComponent(item.name)}`
+                          : item.href
                       }
                       className="hover:underline"
                     >
@@ -38,16 +39,17 @@ export default function Footer() {
               </ul>
             </nav>
             <nav>
-              <h3 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+              <h1 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
                 Services
-              </h3>
+              </h1>
               <ul className="text-xs text-gray-500 dark:text-gray-400">
                 {Services.map((item) => (
                   <li key={item.id} className="mb-4">
                     <Link
                       href={
-                        `/Services/${encodeURIComponent(item.name)}` ||
-                        item.href
+                        item.name
+                          ? `/Services/${encodeURIComponent(item.name)}`
+                          : item.href
                       }
                       className="hover:underline"
                     >
@@ -59,9 +61,9 @@ export default function Footer() {
             </nav>
 
             <nav>
-              <h3 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+              <h1 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
                 Help center
-              </h3>
+              </h1>
               <ul className="text-xs text-gray-500 dark:text-gray-400">
                 {Links2.map((item) => (
                   <li key={item.id} className="mb-4">
@@ -73,9 +75,9 @@ export default function Footer() {
               </ul>
             </nav>
             <nav>
-              <h3 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+              <h1 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
                 Company
-              </h3>
+              </h1>
               <ul className="text-xs text-gray-500 dark:text-gray-400">
                 {Links.map((item) => (
                   <li key={item.id} className="mb-4">
@@ -87,9 +89,9 @@ export default function Footer() {
               </ul>
             </nav>
             <nav>
-              <h3 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+              <h1 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
                 Legal
-              </h3>
+              </h1>
               <ul className="text-xs text-gray-500 dark:text-gray-400">
                 {Links3.map((item) => (
                   <li key={item.id} className="mb-4">
@@ -104,7 +106,7 @@ export default function Footer() {
           <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
           <div className="text-center">
             <Link
-              href="#"
+              href="/"
               className="mb-5 flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white"
             >
               <img

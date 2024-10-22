@@ -14,7 +14,7 @@ import {
 
 const productConfigs = {
   pumps: {
-    img: "/pictures/background/products.png",
+    img: "/pictures/background/pumpBg.png",
     imgArray: PumpImgArray,
     className: "text-4xl  md:text-5xl xl:text-6xl",
     subTitles: ["Our Featured Products"],
@@ -210,7 +210,7 @@ const productConfigs = {
     ],
   },
   filterationsystem: {
-    img: "/pictures/background/filterBg.png",
+    img: "/pictures/background/filterBg.jpg",
     imgArray: FilterationSytemImgArray,
     className: "text-4xl  md:text-5xl xl:text-6xl",
     subTitles: ["Products"],

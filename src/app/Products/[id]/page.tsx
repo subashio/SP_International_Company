@@ -20,7 +20,7 @@ export default function page({ params }: { params: { id: string } }) {
   }
 
   return (
-    <section className="overflow-hidden" key={product.id}>
+    <section className="mb-24 overflow-hidden" key={product.id}>
       <ScrollProgressBar type="circle" color="#00AEFF" showPercentage={true} />
 
       <div
