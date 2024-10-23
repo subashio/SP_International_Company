@@ -1,6 +1,4 @@
-import React from "react";
-
-declare global {
+export declare global {
   interface TLogos {
     id: string | number;
     img: string;

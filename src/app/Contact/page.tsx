@@ -23,19 +23,19 @@ import ScrollProgressBar from "@/components/ui/scroll-progress-bar";
 
 const FormSchema = z.object({
   name: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
+    message: "Name must be at least 2 characters.",
   }),
   phone: z
     .string()
-    .min(10, { message: "Must be a valid mobile number" })
-    .max(14, { message: "Must be a valid mobile number" }),
+    .min(10, { message: "Must be a valid Phone Number" })
+    .max(14, { message: "Must be a valid Phone Number" }),
   email: z
     .string()
     .min(1, { message: "This field has to be filled." })
-    .email("This is not a valid email."),
+    .email("This is not a valid Email."),
 
   message: z.string().min(10, {
-    message: "Username must be at least 2 characters.",
+    message: "Message must be at least 10 characters.",
   }),
 });
 
@@ -58,7 +58,7 @@ export default function Contact() {
         variant: "default",
         title: "Message Received",
         description:
-          "Thank you for reaching out! We’ll get back to you shortly",
+          "Thank you for reaching out! We will get back to you shortly",
       });
     } catch (error) {
       toast({

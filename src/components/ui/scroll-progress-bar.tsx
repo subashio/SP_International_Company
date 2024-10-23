@@ -1,15 +1,14 @@
 "use client";
 
-import React from "react";
+import { cn } from "@/lib/utils";
 import {
   motion,
   useMotionValueEvent,
   useScroll,
   useTransform,
 } from "framer-motion";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
 import { ArrowUpFromDot } from "lucide-react";
+import React from "react";
 
 interface ScrollProgressBarType {
   type?: "circle" | "bar";

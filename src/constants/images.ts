@@ -119,7 +119,7 @@ export const WeldingImgArray: ImageArrayItem[] = [
   },
   {
     name: "HVOF Spraying",
-    img: "/pictures/weld5.jpg",
+    img: "/pictures/welding5.jpg",
     className: "w-full",
   },
 ];

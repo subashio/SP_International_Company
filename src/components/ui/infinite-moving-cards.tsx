@@ -1,5 +1,4 @@
 "use client";
-
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -25,10 +24,8 @@ export const InfiniteMovingCards = ({
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
 
-  useEffect(() => {
-    addAnimation();
-  }, []);
   const [start, setStart] = useState(false);
+
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -45,6 +42,11 @@ export const InfiniteMovingCards = ({
       setStart(true);
     }
   }
+
+  useEffect(() => {
+    addAnimation();
+  }, []);
+
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
