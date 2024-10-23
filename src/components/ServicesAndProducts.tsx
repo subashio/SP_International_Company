@@ -60,9 +60,9 @@ export default function ServicesAndProducts() {
                     <Image
                       src={item.src}
                       alt={item.name}
-                      width={200}
+                      width={100}
                       height={100}
-                      className="h-auto w-auto"
+                      className="h-auto w-[100px]"
                     />
 
                     <p className="">{item.name}</p>

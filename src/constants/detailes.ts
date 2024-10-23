@@ -39,6 +39,7 @@ export const card: TCard[] = [
     name: "Hydraulics",
     href: "#",
     type: "Services",
+    className: "w-16",
   },
   {
     id: 2,
@@ -46,6 +47,7 @@ export const card: TCard[] = [
     name: "Hose Management",
     href: "#",
     type: "Product",
+    className: "w-16",
   },
   {
     id: 3,
@@ -53,6 +55,7 @@ export const card: TCard[] = [
     name: "Pneumatics",
     href: "#",
     type: "Product",
+    className: "w-24",
   },
   {
     id: 4,
@@ -60,6 +63,7 @@ export const card: TCard[] = [
     name: "Filtration System",
     href: "#",
     type: "Product",
+    className: "w-20",
   },
   {
     id: 5,
@@ -67,6 +71,7 @@ export const card: TCard[] = [
     name: "Dewatering",
     href: "#",
     type: "Product",
+    className: "w-32",
   },
   {
     id: 6,
@@ -82,6 +87,7 @@ export const card: TCard[] = [
     name: "Pipeline Flushing",
     href: "#",
     type: "Services",
+    className: "w-20",
   },
 
   {
@@ -90,6 +96,7 @@ export const card: TCard[] = [
     name: "Pumps",
     href: "#",
     type: "Product",
+    className: "w-20",
   },
   {
     id: 9,
@@ -97,6 +104,7 @@ export const card: TCard[] = [
     name: "Welding Solution",
     href: "#",
     type: "Services",
+    className: "w-20",
   },
   {
     id: 10,
@@ -104,7 +112,7 @@ export const card: TCard[] = [
     name: "Valves & Actuators",
     href: "#",
     type: "Product",
-    className: "w-auto h-auto",
+    className: "w-20",
   },
   {
     id: 11,
@@ -112,6 +120,7 @@ export const card: TCard[] = [
     name: "Environment Services",
     href: "#",
     type: "Services",
+    className: "w-20",
   },
   {
     id: 12,
@@ -119,6 +128,7 @@ export const card: TCard[] = [
     name: "Refiners Oil & Gas",
     href: "#",
     type: "Services",
+    className: "w-20",
   },
   {
     id: 13,
@@ -126,6 +136,7 @@ export const card: TCard[] = [
     name: "Water & Waste Water",
     href: "#",
     type: "Services",
+    className: "w-20",
   },
   {
     id: 14,
@@ -133,6 +144,7 @@ export const card: TCard[] = [
     name: "POWER",
     href: "#",
     type: "Services",
+    className: "w-20",
   },
   {
     id: 15,
@@ -140,6 +152,7 @@ export const card: TCard[] = [
     name: "Chemical & Process",
     href: "#",
     type: "Services",
+    className: "w-20",
   },
 ];
 
