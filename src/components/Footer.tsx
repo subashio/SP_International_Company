@@ -107,11 +107,11 @@ export default function Footer() {
           <div className="text-center">
             <Link
               href="/"
-              className="mb-5 flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white"
+              className="mb-5 flex items-center justify-center font-semibold text-gray-900 dark:text-white sm:text-2xl"
             >
               <img
                 src="/logos/logo.png"
-                className="mr-3 h-8 sm:h-10"
+                className="mr-3 h-6 sm:h-8"
                 alt="Landwind Logo"
               />
               SP INTERNATIONALS SERVICES
