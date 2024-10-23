@@ -99,27 +99,27 @@ export const HydraulicsImgArray: ImageArrayItem[] = [
 export const WeldingImgArray: ImageArrayItem[] = [
   {
     name: "MMA Welding",
-    img: "/pictures/welding1.jpg ",
+    img: "/pictures/welding1.jpg",
     className: "w-full",
   },
   {
     name: "Plasma Cutting",
-    img: "/pictures/welding2.jpeg ",
+    img: "/pictures/welding2.jpeg",
     className: "w-full",
   },
   {
     name: "Laser Cladding",
-    img: "/pictures/welding3.jpg ",
+    img: "/pictures/welding3.jpg",
     className: "w-full",
   },
   {
     name: "Hot Flame Sprayin",
-    img: "/pictures/welding4.jpg ",
+    img: "/pictures/welding4.jpg",
     className: "w-full",
   },
   {
     name: "HVOF Spraying",
-    img: "/pictures/weld5.jpg ",
+    img: "/pictures/weld5.jpg",
     className: "w-full",
   },
 ];
