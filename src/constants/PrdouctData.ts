@@ -106,7 +106,7 @@ const productConfigs = {
   valvesandactuators: {
     img: "/pictures/background/valveBg.jpg",
     imgArray: valvesImgArray,
-    className: "text-4xl  md:text-5xl xl:text-6xl",
+    className: "text-3xl  md:text-5xl xl:text-6xl",
     subTitles: ["Valves Range", "Actuators Range"],
 
     points: [
@@ -228,7 +228,7 @@ const productConfigs = {
   ElectricalMechanicalSpares: {
     img: "/pictures/background/spareBg.jpg",
     imgArray: ElectricalMechanicalSpares,
-    className: "text-2xl  md:text-4xl xl:text-6xl",
+    className: "text-xl  md:text-4xl xl:text-6xl",
     subTitles: ["Electrical Products", "Mechanical Products"],
 
     points: [

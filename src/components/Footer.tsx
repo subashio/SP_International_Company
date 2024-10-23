@@ -111,7 +111,7 @@ export default function Footer() {
             >
               <img
                 src="/logos/logo.png"
-                className="mr-3 h-6 sm:h-9"
+                className="mr-3 h-8 sm:h-10"
                 alt="Landwind Logo"
               />
               SP INTERNATIONALS SERVICES

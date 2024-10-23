@@ -12,6 +12,7 @@ import { feedbacks } from "@/constants/detailes";
 import Autoplay from "embla-carousel-autoplay";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Feedback() {
   const [api, setApi] = useState<CarouselApi>();
@@ -59,10 +60,16 @@ export default function Feedback() {
               key={item.id}
               className="flex flex-col items-center justify-center gap-8 text-center"
             >
-              <img src={item.Qoutes} alt="symbole" className="w-10" />
+              <Image
+                src={item.Qoutes}
+                alt="qoutes image"
+                width={100}
+                height={10}
+                className="h-auto w-auto"
+              />
               <p className="max-w-2xl">{item.message}</p>
               <div className="flex gap-3">
-                <img src={item.avatar} alt="" />
+                <img src={item.avatar} alt="avatar image" />
                 <p>
                   <span className="font-semibold">{item.name} / </span>
                   {item.position}

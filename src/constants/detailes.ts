@@ -74,6 +74,7 @@ export const card: TCard[] = [
     name: "Electrical & Mechanical Spares",
     href: "#",
     type: "Product",
+    className: "w-20",
   },
   {
     id: 7,
@@ -103,6 +104,7 @@ export const card: TCard[] = [
     name: "Valves & Actuators",
     href: "#",
     type: "Product",
+    className: "w-auto h-auto",
   },
   {
     id: 11,

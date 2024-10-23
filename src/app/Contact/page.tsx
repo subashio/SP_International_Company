@@ -1,6 +1,5 @@
 "use client";
 import { zodResolver } from "@hookform/resolvers/zod";
-
 import {
   Form,
   FormControl,
@@ -14,9 +13,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Loader } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-
 import { sendContactForm } from "@/lib/api";
-
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";

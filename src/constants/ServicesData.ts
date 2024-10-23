@@ -156,7 +156,7 @@ const servicesConfig = {
   },
   chemicalServices: {
     img: "/pictures/background/chemicalBg.jpg",
-    className: "text-4xl  md:text-5xl xl:text-6xl",
+    className: "text-3xl  md:text-5xl xl:text-6xl",
     subTitles: [
       "Chemical Decontamination Process",
       "Effective Use of Chemical Cleaning",
@@ -203,7 +203,7 @@ const servicesConfig = {
   },
   waterandWasteServices: {
     img: "/pictures/background/waterBg.jpeg",
-    className: "text-4xl  md:text-5xl xl:text-6xl",
+    className: "text-3xl  md:text-5xl xl:text-6xl",
     subTitles: [
       "High-Pressure Water Jetting (HPWJ) for Industrial Cleaning",
       "Benefits",

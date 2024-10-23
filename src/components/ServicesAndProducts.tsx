@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Card } from "./ui/card";
+import { cn } from "@/lib/utils";
 
 export default function ServicesAndProducts() {
   return (
@@ -41,9 +42,9 @@ export default function ServicesAndProducts() {
                     <Image
                       src={item.src}
                       alt={item.name}
-                      width={200}
+                      width={100}
                       height={100}
-                      className="h-auto w-auto"
+                      className={cn("h-auto w-auto", item.className)}
                     />
 
                     <p className="">{item.name}</p>

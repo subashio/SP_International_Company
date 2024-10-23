@@ -1,9 +1,8 @@
-import { ReactNode } from "react";
+import React from "react";
 
 declare global {
   interface TLogos {
     id: string | number;
-    // href: string;
     img: string;
     alt: string;
   }
@@ -17,7 +16,7 @@ declare global {
     name: string;
     src: string;
     href: string;
-    style?: string;
+    className?: string;
     type: "Product" | "Services";
   };
   type TList = {

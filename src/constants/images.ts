@@ -72,7 +72,7 @@ export const HydraulicsImgArray: ImageArrayItem[] = [
   {
     name: "Hydraulic Motor Repair",
     img: "/pictures/hydro1.png",
-    className: "w-full",
+    className: "w-full ",
   },
   {
     name: "Shaft Alignment Check",
@@ -99,22 +99,22 @@ export const HydraulicsImgArray: ImageArrayItem[] = [
 export const WeldingImgArray: ImageArrayItem[] = [
   {
     name: "MMA Welding",
-    img: "/pictures/weld1.jpg ",
+    img: "/pictures/welding1.jpg ",
     className: "w-full",
   },
   {
     name: "Plasma Cutting",
-    img: "/pictures/weld2.jpeg ",
+    img: "/pictures/welding2.jpeg ",
     className: "w-full",
   },
   {
     name: "Laser Cladding",
-    img: "/pictures/weld3.jpg ",
+    img: "/pictures/welding3.jpg ",
     className: "w-full",
   },
   {
     name: "Hot Flame Sprayin",
-    img: "/pictures/weld4.jpg ",
+    img: "/pictures/welding4.jpg ",
     className: "w-full",
   },
   {
@@ -398,19 +398,19 @@ export const valvesImgArray: ImageArrayItem[] = [
 export const PneumaticImgArray: ImageArrayItem[] = [
   {
     name: "Pneumatic fittings",
-    img: "/pictures/Pneu1.jpg",
+    img: "/pictures/pneu1.jpg",
   },
   {
     name: "Pneumatic control valves",
-    img: "/pictures/Pneu2.png",
+    img: "/pictures/pneu2.png",
   },
   {
     name: "Hydraulic couplings.",
-    img: "/pictures/Pneu3.png",
+    img: "/pictures/pneu3.png",
   },
   {
     name: "pneumatic mufflers",
-    img: "/pictures/Pneu4.png",
+    img: "/pictures/pneu4.png",
   },
   {
     name: " pneumatic control equipment",
