@@ -1,19 +1,4 @@
-<div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
-      <div style="flex-shrink: 0; margin-left: 20px;">
-    <img src="./public/logos/logo.png" alt="SP International Logo" width="100" />
-  </div>
-    <h1>SP International Services (SP Co) Website</h1>
-    <p>
-      Welcome to the official repository for the <strong>SP International Services (SP Co)</strong> website, a global solution provider for industrial products and services. This website is built using <strong>Next.js</strong> for the frontend and provides a clean, professional interface to showcase SP International's range of products and services.
-    </p>
-  </div>
 
-</div>
-
-
-
-![SP International Logo](./public/logos/logo.png)
 # SP International Services (SP Co) Website
 
 Welcome to the official repository for the **SP International Services (SP Co)** website, a global solution provider for industrial products and services. This website is built using **Next.js** for the frontend and provides a clean, professional interface to showcase SP International's range of products and services.
