@@ -1,4 +1,5 @@
-(./public/logos/logo.png) # SP International Services (SP Co) Website
+![SP International Logo](./public/logos/logo.png)
+# SP International Services (SP Co) Website
 
 Welcome to the official repository for the **SP International Services (SP Co)** website, a global solution provider for industrial products and services. This website is built using **Next.js** for the frontend and provides a clean, professional interface to showcase SP International's range of products and services.
 
