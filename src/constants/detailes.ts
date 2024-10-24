@@ -39,7 +39,7 @@ export const card: TCard[] = [
     name: "Hydraulics",
     href: "#",
     type: "Services",
-    className: "w-16",
+    className: "w-20",
   },
   {
     id: 2,

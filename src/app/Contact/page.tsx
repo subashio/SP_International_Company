@@ -82,7 +82,7 @@ export default function Contact() {
               We're here to help!
             </p>
             <div className="mt-10 space-y-6 text-base leading-7 text-gray-600">
-              <Card className="group flex cursor-pointer items-center gap-x-4 border-none p-6 shadow-[0_3px_10px_rgb(0,0,0,0.2)] transition-all duration-500 hover:bg-sky-200">
+              <Card className="group flex cursor-pointer items-center gap-x-4 border-none p-6 shadow-[0_3px_10px_rgb(0,0,0,0.2)] transition-all duration-300 hover:bg-sky-200">
                 <Logos
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -93,13 +93,15 @@ export default function Contact() {
                   d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
                   className="h-14 w-14 border-none bg-sky-200 p-2 text-sky-900 shadow-lg transition-all duration-500 group-hover:scale-110"
                 />
-                <CardContent className="flex flex-col justify-center pt-4">
+                <CardContent className="flex flex-col justify-center gap-2">
                   <h1 className="text-xl font-semibold">Contact</h1>
-                  <p> Mobile: +1 (123) 456-7890</p>
-                  <p> Mail: tailnext@gmail.com</p>
+                  <div className="text-[16px]">
+                    <p> Mobile: +91 9392923828</p>
+                    <p> E-mail: info@spintls.com</p>
+                  </div>
                 </CardContent>
               </Card>
-              <Card className="group flex cursor-pointer items-center gap-x-4 border-none p-6 shadow-[0_3px_10px_rgb(0,0,0,0.2)] transition-all duration-500 hover:bg-sky-200">
+              <Card className="group flex cursor-pointer items-center gap-x-4 border-none p-6 shadow-[0_3px_10px_rgb(0,0,0,0.2)] transition-all duration-300 hover:bg-sky-200">
                 <Logos
                   xmlns="http://www.w3.org/2000/svg"
                   d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"
@@ -110,10 +112,12 @@ export default function Contact() {
                   aria-hidden="true"
                   className="h-14 w-16 border-none bg-sky-200 p-3 text-sky-900 shadow-lg transition-all duration-500 group-hover:scale-110 sm:w-14"
                 />
-                <CardContent className="flex flex-col justify-center pt-4">
+                <CardContent className="flex flex-col justify-center gap-2 pt-4">
                   <h1 className="text-xl font-semibold">Address</h1>
-                  <p className="max-w-sm">
-                    1230 Maecenas Street Donec Road New York, EEUU
+                  <p className="max-w-sm text-[16px]">
+                    No. 7/55-3G, Balaji Garden Extension, 4th Street,
+                    Saravanampatti Sub Post Office, Keeranatham, Coimbatore,
+                    Tamil Nadu - 641035, India.
                   </p>
                 </CardContent>
               </Card>
