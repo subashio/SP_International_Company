@@ -193,11 +193,11 @@ export const Links2: TNav[] = [
   { id: 3, name: "Linkedin", href: "#" },
   { id: 4, name: "Contact us", href: "/Contact" },
 ];
-export const Links3: TNav[] = [
-  { id: 1, name: "Privacy Policy", href: "#" },
-  { id: 2, name: "Licensing", href: "#" },
-  { id: 3, name: "Terms", href: "#" },
-];
+// export const Links3: TNav[] = [
+//   { id: 1, name: "Privacy Policy", href: "#" },
+//   { id: 2, name: "Licensing", href: "#" },
+//   { id: 3, name: "Terms", href: "#" },
+// ];
 export const Products: TNav[] = [
   { id: 1, name: "Pumps", href: "#" },
   { id: 2, name: "Pneumatics", href: "#" },

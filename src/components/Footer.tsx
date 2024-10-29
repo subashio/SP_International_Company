@@ -4,7 +4,7 @@ import {
   footerSvg,
   Links,
   Links2,
-  Links3,
+  // Links3,
   Products,
   Services,
 } from "@/constants/detailes";
@@ -88,7 +88,7 @@ export default function Footer() {
                 ))}
               </ul>
             </nav>
-            <nav>
+            {/* <nav>
               <h1 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
                 Legal
               </h1>
@@ -101,7 +101,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            </nav>
+            </nav> */}
           </div>
           <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
           <div className="text-center">
