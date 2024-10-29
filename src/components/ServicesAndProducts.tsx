@@ -1,12 +1,12 @@
 "use client";
 import { fadeInAnimation } from "@/constants/amination";
 import { card } from "@/constants/detailes";
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Card } from "./ui/card";
-import { cn } from "@/lib/utils";
 
 export default function ServicesAndProducts() {
   return (

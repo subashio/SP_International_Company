@@ -114,7 +114,10 @@ export default function Footer() {
                 className="mr-3 h-6 sm:h-8"
                 alt="Landwind Logo"
               />
-              SP INTERNATIONALS SERVICES
+              <span className="font-bootle self-center whitespace-nowrap font-medium tracking-wide sm:text-xl">
+                <span className="text-[18px] sm:text-[22px]"> SP </span>
+                INTERNATIONAL SERVICES
+              </span>
             </Link>
             <span className="block text-center text-sm text-gray-500 dark:text-gray-400">
               © 2021-2026. All Rights Reserved.

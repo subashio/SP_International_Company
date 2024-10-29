@@ -2,10 +2,9 @@
 import { slideLeftAnimation, slideRightAnimation } from "@/constants/amination";
 import { motion } from "framer-motion";
 import Image from "next/image";
-// import { Link } from "react-scroll";
+import Link from "next/link";
 import Collaburation from "./Collaburation";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -38,7 +37,7 @@ export default function Hero() {
 
             <Link
               href="#about"
-              className="mb-2 mr-2 inline-flex w-full cursor-pointer items-center justify-center rounded-lg border-2 border-gray-200 border-transparent bg-white px-5 py-3 text-sm font-medium text-secondary-foreground shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition duration-300 hover:border-sky-200 hover:text-sky-450 sm:w-auto"
+              className="mb-2 mr-2 inline-flex w-full cursor-pointer items-center justify-center rounded-lg border-2 border-gray-200 border-transparent bg-white px-5 py-3 text-sm font-medium text-secondary-foreground shadow-[0_8px_20px_rgb(0,0,0,0.12)] transition duration-300 hover:border-sky-200 hover:text-sky-450 sm:w-auto"
             >
               About us
             </Link>

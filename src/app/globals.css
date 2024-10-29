@@ -84,7 +84,14 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-  /* .boxShadow {
-    @apply rounded-[10px] text-black shadow-[3px_-3px_36px_19px_rgba(0,0,0,0.05)_inset];
-  } */
+}
+@font-face {
+  font-family: "Bootle";
+  src: url("/fonts/bootle__.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-bootle {
+  font-family: "Bootle", Arial, sans-serif;
 }

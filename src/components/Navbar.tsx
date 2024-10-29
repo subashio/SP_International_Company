@@ -19,11 +19,13 @@ import MobileNav from "./MobileNav";
 
 export default function Navbar() {
   const router = useRouter();
+
   function handleClick(itemName: string, type: "Products" | "Services") {
     router.push(`/${type}/${encodeURIComponent(itemName)}`);
   }
+
   return (
-    <header className="fixed z-50 w-full bg-white">
+    <header className="fixed z-50 w-full bg-background">
       <MaxWidthWrapper className="mx-auto flex h-24 items-center justify-between">
         <Link className="flex items-center" href="/">
           <motion.div
@@ -41,8 +43,9 @@ export default function Navbar() {
               alt="SP International Services logo"
             />
 
-            <span className="self-center whitespace-nowrap font-semibold dark:text-white sm:text-xl">
-              SP INTERNATIONAL SERVICES
+            <span className="font-bootle self-center whitespace-nowrap font-medium tracking-wide sm:text-xl">
+              <span className="text-[18px] sm:text-[22px]"> SP </span>
+              INTERNATIONAL SERVICES
             </span>
           </motion.div>
         </Link>

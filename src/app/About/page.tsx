@@ -116,7 +116,7 @@ export default function About() {
           </motion.div>
         </MaxWidthWrapper>
       </div>
-      <div className="my-20 flex flex-col items-center justify-center">
+      <MaxWidthWrapper className="my-20 flex flex-col items-center justify-center">
         <h1 className="text-center text-2xl font-bold leading-none tracking-tight md:text-4xl">
           Industrial & Energy Solutions
         </h1>
@@ -142,7 +142,7 @@ export default function About() {
             </motion.li>
           ))}
         </ul>
-      </div>
+      </MaxWidthWrapper>
 
       <div className="bg-[#F2F4F6] py-20">
         <MaxWidthWrapper className="flex flex-col items-center justify-center">

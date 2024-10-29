@@ -140,14 +140,6 @@ export const card: TCard[] = [
   },
   {
     id: 14,
-    src: "/logos/power.png",
-    name: "POWER",
-    href: "#",
-    type: "Services",
-    className: "w-20",
-  },
-  {
-    id: 15,
     src: "/logos/chemical.png",
     name: "Chemical & Process",
     href: "#",
@@ -220,14 +212,13 @@ export const Products: TNav[] = [
   },
 ];
 export const Services: TNav[] = [
-  { id: 1, name: "Power", href: "#" },
-  { id: 2, name: "Hydraulics", href: "#" },
-  { id: 3, name: "Welding Solution", href: "#" },
-  { id: 4, name: "Pipeline Flushing", href: "" },
-  { id: 5, name: "Environment Services", href: "#" },
-  { id: 6, name: "Refiners Oil & Gas", href: "#" },
-  { id: 7, name: "Water & Waste Water", href: "#" },
-  { id: 8, name: "Chemical & Process", href: "#" },
+  { id: 1, name: "Hydraulics", href: "#" },
+  { id: 2, name: "Welding Solution", href: "#" },
+  { id: 3, name: "Pipeline Flushing", href: "" },
+  { id: 4, name: "Environment Services", href: "#" },
+  { id: 5, name: "Refiners Oil & Gas", href: "#" },
+  { id: 6, name: "Water & Waste Water", href: "#" },
+  { id: 7, name: "Chemical & Process", href: "#" },
 ];
 
 export const footerSvg: TfooterSvg[] = [

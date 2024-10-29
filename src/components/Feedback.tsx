@@ -11,8 +11,8 @@ import { slidedownAnimation } from "@/constants/amination";
 import { feedbacks } from "@/constants/detailes";
 import Autoplay from "embla-carousel-autoplay";
 import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
 export default function Feedback() {
   const [api, setApi] = useState<CarouselApi>();

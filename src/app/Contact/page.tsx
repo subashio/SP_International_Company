@@ -1,5 +1,7 @@
 "use client";
-import { zodResolver } from "@hookform/resolvers/zod";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Form,
   FormControl,
@@ -9,17 +11,15 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import Logos from "@/components/ui/Logo";
+import ScrollProgressBar from "@/components/ui/scroll-progress-bar";
+import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import { sendContactForm } from "@/lib/api";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { sendContactForm } from "@/lib/api";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import Logos from "@/components/ui/Logo";
-import { Textarea } from "@/components/ui/textarea";
-import ScrollProgressBar from "@/components/ui/scroll-progress-bar";
 
 const FormSchema = z.object({
   name: z.string().min(2, {
@@ -96,7 +96,7 @@ export default function Contact() {
                 <CardContent className="flex flex-col justify-center gap-2">
                   <h1 className="text-xl font-semibold">Contact</h1>
                   <div className="text-[16px]">
-                    <p> Mobile: +91 9392923828</p>
+                    <p> Mobile: +91 9535032396</p>
                     <p> E-mail: info@spintls.com</p>
                   </div>
                 </CardContent>
