@@ -23,7 +23,7 @@ export default function ImageCard({ imgArray, Details }: ProductImageProps) {
             >
               <Card
                 key={index}
-                className="group flex h-[400px] w-full cursor-pointer flex-col items-center justify-around p-4 transition-all duration-700 hover:border hover:border-[#23A0DA] sm:w-auto md:w-[400px] lg:w-auto"
+                className="group flex h-[400px] w-full cursor-pointer flex-col items-center justify-around p-4 pt-6 transition-all duration-700 hover:border hover:border-[#23A0DA] sm:w-auto md:w-[400px] lg:w-auto"
               >
                 <CardContent className="flex w-96 items-center justify-center">
                   <Image

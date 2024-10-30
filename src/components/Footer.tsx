@@ -16,7 +16,7 @@ export default function Footer() {
     <footer className="">
       <MaxWidthWrapper>
         <div className="mx-auto max-w-screen-xl p-4 py-6 md:p-8 lg:p-10 lg:py-16">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+          <div className="grid grid-cols-2 place-content-center gap-8 md:grid-cols-3 lg:grid-cols-4">
             <nav>
               <h1 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
                 products
@@ -120,7 +120,7 @@ export default function Footer() {
               </span>
             </Link>
             <span className="block text-center text-sm text-gray-500 dark:text-gray-400">
-              © 2021-2026. All Rights Reserved.
+              © 2024. All Rights Reserved.
             </span>
             <ul className="mt-5 flex justify-center space-x-5">
               {footerSvg.map((item) => (
