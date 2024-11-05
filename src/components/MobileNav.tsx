@@ -72,7 +72,7 @@ export default function MobileNav() {
                 <AccordionTrigger
                   className={cn(
                     buttonVariants({ variant: "ghost" }),
-                    "flex w-full items-center justify-center gap-1 !no-underline",
+                    "mb-2 flex w-full items-center justify-center gap-1 !no-underline",
                   )}
                 >
                   Services
