@@ -34,7 +34,7 @@ export default function ImageCard({ imgArray, Details }: ProductImageProps) {
                       "relative h-auto w-auto object-contain transition-all duration-700 group-hover:scale-110",
                       item.className,
                     )}
-                    alt={`product-image-${index}`}
+                    alt={`product-image-${index} SP International`}
                   />
                 </CardContent>
 
@@ -72,7 +72,7 @@ export default function ImageCard({ imgArray, Details }: ProductImageProps) {
                       "h-auto w-auto transition-all duration-700 group-hover:scale-110",
                       item.className,
                     )}
-                    alt={`product-image-${index}`}
+                    alt={`product-image-${index} SP International`}
                   />
                 </CardContent>
 

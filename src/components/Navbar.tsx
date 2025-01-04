@@ -40,7 +40,7 @@ export default function Navbar() {
             <img
               src="/logos/logo.png"
               className="mr-3 h-8 sm:h-10"
-              alt="SP International Services logo"
+              alt="SP International  logo"
             />
 
             <span className="font-bootle self-center whitespace-nowrap font-medium tracking-wide sm:text-xl">

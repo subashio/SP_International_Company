@@ -57,7 +57,7 @@ export default function Hero() {
             height={200}
             className="h-auto w-auto rounded-3xl md:shadow-[-16px_-16px_4px_2px_#00000049]"
             src="/pictures/background/hero1.png"
-            alt="Logo"
+            alt="hero image for SP International"
           />
         </motion.div>
       </MaxWidthWrapper>

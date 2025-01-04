@@ -133,7 +133,11 @@ export default function About() {
               custom={index}
             >
               <Card className="max-w-xl cursor-pointer rounded-3xl p-10 text-card-foreground transition-all duration-300 hover:bg-[#DDF5FF] hover:shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
-                <img src={item.img} alt="logo" className="h-10" />
+                <img
+                  src={item.img}
+                  alt="SP Internationali logo image"
+                  className="h-10"
+                />
                 <CardTitle className="my-4">{item.name}</CardTitle>
                 <CardDescription className="max-w-sm text-gray-500 xl:max-w-xl">
                   {item.description}

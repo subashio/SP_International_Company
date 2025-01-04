@@ -94,7 +94,7 @@ export default function page({ params }: { params: { id: string } }) {
                 key={index}
                 variants={listItem}
                 src={img.img}
-                alt="environment"
+                alt="environment sp internationl"
                 className="h-auto w-full shadow-xl"
               />
             ))}

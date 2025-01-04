@@ -66,13 +66,13 @@ export default function About() {
         <motion.img
           variants={listItem}
           src="/pictures/environment.png"
-          alt="environment"
+          alt="environment SP International image"
           className="w-full rounded-3xl md:col-span-5"
         />
         <motion.img
           variants={listItem}
           src="/pictures/valves_about.png"
-          alt="environment"
+          alt="environment SP International image"
           className="hidden w-full rounded-3xl md:col-span-5 xl:block"
         />
       </motion.div>

@@ -41,7 +41,7 @@ export default function ServicesAndProducts() {
                   <Card className="flex h-44 w-64 flex-col items-center justify-around text-card-foreground shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] transition-all duration-300 hover:scale-105 hover:border-sky-500">
                     <Image
                       src={item.src}
-                      alt={item.name}
+                      alt={`SP Internationali logo image ${item.name}`}
                       width={100}
                       height={100}
                       className={cn("h-auto w-auto", item.className)}
@@ -59,7 +59,7 @@ export default function ServicesAndProducts() {
                   <Card className="flex h-44 w-64 flex-col items-center justify-around text-card-foreground shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] transition-all duration-300 hover:scale-105 hover:border-sky-500">
                     <Image
                       src={item.src}
-                      alt={item.name}
+                      alt={`SP Internationali logo image ${item.name}`}
                       width={100}
                       height={100}
                       className="h-auto w-[100px]"

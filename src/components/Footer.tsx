@@ -112,7 +112,7 @@ export default function Footer() {
               <img
                 src="/logos/logo.png"
                 className="mr-3 h-6 sm:h-8"
-                alt="Landwind Logo"
+                alt="SP International Logo"
               />
               <span className="font-bootle self-center whitespace-nowrap font-medium tracking-wide sm:text-xl">
                 <span className="text-[18px] sm:text-[22px]"> SP </span>

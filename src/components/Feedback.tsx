@@ -69,7 +69,11 @@ export default function Feedback() {
               />
               <p className="max-w-2xl">{item.message}</p>
               <div className="flex gap-3">
-                <img src={item.avatar} alt="avatar image" />
+                <img
+                  src={item.avatar}
+                  alt="Sp internationl reviewers avatar image"
+                  className="h-7 w-7 rounded-full object-cover object-center"
+                />
                 <p>
                   <span className="font-semibold">{item.name} / </span>
                   {item.position}

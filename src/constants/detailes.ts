@@ -164,21 +164,21 @@ export const list: TList[] = [
 export const feedbacks: TFeedbacks[] = [
   {
     id: 1,
-    avatar: "/icons/Avatar.png",
-    name: "Micheal Gough",
-    position: "CEO at Google",
+    avatar: "/icons/Avatar-1.png",
+    name: "Rajesh Kumar",
+    position: "Director at L&T Construction",
     Qoutes: "/icons/symbole.png",
     message:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
+      "We rely on SP International Services for our industrial filtration systems. Their products are reliable, durable, and backed by excellent technical support. Highly recommended!",
   },
   {
     id: 2,
-    avatar: "/icons/Avatar.png",
-    name: "Micheal Gough",
-    position: "CEO at Google",
+    avatar: "/icons/Avatar-2.png",
+    name: "Sarah Mitchell",
+    position: "Environmental Consultant",
     Qoutes: "/icons/symbole.png",
     message:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
+      "The team at SP International Services delivers more than just products – they offer complete solutions. Their dedication to understanding client needs and providing tailored recommendations sets them apart in the industrial sector.",
   },
 ];
 
@@ -306,7 +306,7 @@ export const AboutCards: TAboutCards[] = [
   },
   {
     id: 2,
-    name: "Industry Solutionse",
+    name: "Industry Solution",
     description:
       "Offering specialized solutions to address the unique needs of industries such as Pharma, Oil & Gas, Water, and Power",
     img: "/icons/icon2.png",

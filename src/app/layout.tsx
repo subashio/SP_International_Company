@@ -17,9 +17,23 @@ export const metadata: Metadata = {
   title: " SP International Services - Global Industrial Solutions Provider  ",
   description:
     "SP International Services (SP Co) offers a global presence in Pumps, Valves, Hydraulics, Solar Pumping Systems, and more. Solutions for industries like Oil & Gas, Water Management, Chemical Processing, and more. Trusted worldwide!",
-  authors: [{ name: "Subash", url: "https://github.com/Git-Subash" }],
+  authors: [{ name: "Subash", url: "https://github.com/subashio" }],
   keywords: [
+    "sp international",
+    "sp international co",
+    "sp international Products",
     "SP International Services",
+    "SP International Pumps",
+    "SP International Valves",
+    "SP International Actuator",
+    "SP International Solutions",
+    "Global sp internatonal",
+    "Pump supplier",
+    "supplier",
+    "Valves supplier",
+    "Actuators supplier",
+    "Pneumatics supplier",
+    "industrial solution",
     "SP Co",
     "Trusted Worldwide",
     "Industrial Solutions Provider",
@@ -45,7 +59,8 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "sp-international-company.vercel.app",
+    // canonical: "sp-international-company.vercel.app",
+    canonical: "https://spintls.com",
   },
 };
 
