@@ -120,7 +120,8 @@ export default function About() {
         <h1 className="text-center text-2xl font-bold leading-none tracking-tight md:text-4xl">
           Industrial & Energy Solutions
         </h1>
-        <ul className="my-10 flex max-w-7xl flex-wrap items-center justify-center gap-10 py-10 lg:gap-10 xl:justify-between">
+        {/* <ul className="my-10 flex max-w-7xl flex-wrap items-center justify-center gap-10 bg-slate-500 py-10 lg:gap-10 xl:justify-between"> */}
+        <ul className="my-10 grid w-full max-w-7xl place-content-center gap-10 py-10 md:grid-cols-2 lg:gap-10">
           {AboutCards.map((item, index) => (
             <motion.li
               key={index}
@@ -135,7 +136,7 @@ export default function About() {
               <Card className="max-w-xl cursor-pointer rounded-3xl p-10 text-card-foreground transition-all duration-300 hover:bg-[#DDF5FF] hover:shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
                 <img
                   src={item.img}
-                  alt="SP Internationali logo image"
+                  alt="SP International services logo image"
                   className="h-10"
                 />
                 <CardTitle className="my-4">{item.name}</CardTitle>

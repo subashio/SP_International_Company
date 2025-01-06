@@ -96,7 +96,7 @@ export default function Contact() {
                 <CardContent className="flex flex-col justify-center gap-2">
                   <h1 className="text-xl font-semibold">Contact</h1>
                   <div className="text-[16px]">
-                    <p> Mobile: +91 9535032396</p>
+                    <p> Mobile: +91 8072010950</p>
                     <p> E-mail: info@spintls.com</p>
                   </div>
                 </CardContent>
