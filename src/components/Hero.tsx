@@ -3,13 +3,13 @@ import { slideLeftAnimation, slideRightAnimation } from "@/constants/amination";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import Collaburation from "./Collaburation";
+// import Collaburation from "./Collaburation";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 
 export default function Hero() {
   return (
     <section className="mx-auto mt-14 w-full bg-sky-50">
-      <MaxWidthWrapper className="mb-20 grid px-4 pb-8 pt-20 lg:grid-cols-12 lg:gap-8 lg:py-16 lg:pt-28 xl:gap-0">
+      <MaxWidthWrapper className="grid px-4 pb-24 pt-20 lg:grid-cols-12 lg:gap-8 lg:py-32 lg:pt-28 xl:gap-0">
         <motion.div
           variants={slideLeftAnimation}
           initial="initial"
@@ -61,7 +61,7 @@ export default function Hero() {
           />
         </motion.div>
       </MaxWidthWrapper>
-      <Collaburation />
+      {/* <Collaburation /> */}
     </section>
   );
 }
